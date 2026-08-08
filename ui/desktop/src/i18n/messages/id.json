@@ -168,10 +168,10 @@
     "defaultMessage": "Jalankan"
   },
   "chat.notification.taskComplete.body": {
-    "defaultMessage": "Klik di sini untuk membawa Goose kembali ke fokus."
+    "defaultMessage": "Click here to bring Goose back into focus."
   },
   "chat.notification.taskComplete.title": {
-    "defaultMessage": "Goose telah menyelesaikan tugas."
+    "defaultMessage": "Goose finished the task."
   },
   "chatInput.contextWindow": {
     "defaultMessage": "Jendela konteks"
@@ -222,13 +222,13 @@
     "defaultMessage": "Menunggu gambar disimpan..."
   },
   "chatSettings.modeDescription": {
-    "defaultMessage": "Pilih mode default yang digunakan Goose untuk sesi baru. Sesi yang sudah ada tetap menggunakan mode saat ini."
+    "defaultMessage": "Choose the default mode SHIP-OS Agent uses for new sessions. Existing sessions keep their current mode."
   },
   "chatSettings.modeTitle": {
     "defaultMessage": "Mode Default"
   },
   "chatSettings.responseStylesDescription": {
-    "defaultMessage": "Pilih bagaimana Goose memformat dan menata respons-nya"
+    "defaultMessage": "Choose how SHIP-OS Agent should format and style its responses"
   },
   "chatSettings.responseStylesTitle": {
     "defaultMessage": "Gaya Respons"
@@ -324,7 +324,7 @@
     "defaultMessage": "Giliran Maksimum"
   },
   "conversationLimitsDropdown.maxTurnsDescription": {
-    "defaultMessage": "Giliran agen maksimum sebelum Goose meminta masukan pengguna"
+    "defaultMessage": "Maximum agent turns before SHIP-OS Agent asks for user input"
   },
   "costTracker.costUnavailable": {
     "defaultMessage": "Data biaya tidak tersedia untuk {model} ({inputTokens} token masukan, {outputTokens} token keluaran)"
@@ -936,7 +936,7 @@
     "defaultMessage": "Permintaan informasi dibatalkan."
   },
   "elicitationRequest.defaultMessage": {
-    "defaultMessage": "Goose memerlukan beberapa informasi dari Anda."
+    "defaultMessage": "SHIP-OS Agent needs some information from you."
   },
   "elicitationRequest.expired": {
     "defaultMessage": "Permintaan ini telah kedaluwarsa. Ekstensi perlu menanyakan lagi."
@@ -981,7 +981,7 @@
     "defaultMessage": "Terjadi kesalahan."
   },
   "errorBoundary.errorWithVersion": {
-    "defaultMessage": "Terjadi kesalahan di Goose v{version}."
+    "defaultMessage": "An error occurred in SHIP-OS Agent v{version}."
   },
   "errorBoundary.heading": {
     "defaultMessage": "Honk!"
@@ -1167,7 +1167,7 @@
     "defaultMessage": "Ekstensi yang diaktifkan di sini digunakan sebagai bawaan untuk obrolan baru. Anda juga dapat mengaktifkan ekstensi aktif selama obrolan."
   },
   "extensionsView.description": {
-    "defaultMessage": "Ekstensi ini menggunakan Model Context Protocol (MCP). Mereka dapat memperluas kemampuan Goose menggunakan tiga komponen utama: Prompt, Sumber Daya, dan Alat. {searchShortcut} untuk mencari."
+    "defaultMessage": "These extensions use the Model Context Protocol (MCP). They can expand Goose's capabilities using three main components: Prompts, Resources, and Tools. {searchShortcut} to search."
   },
   "extensionsView.heading": {
     "defaultMessage": "Ekstensi"
@@ -1191,13 +1191,13 @@
     "defaultMessage": "Certificate fingerprint requires an https URL"
   },
   "externalBackendSection.restartNote": {
-    "defaultMessage": "Perubahan memerlukan mulai ulang Goose agar berlaku. Jendela obrolan baru akan terhubung ke server eksternal."
+    "defaultMessage": "Changes apply to new chat windows. Restart SHIP-OS Agent to update existing windows."
   },
   "externalBackendSection.secretKey": {
     "defaultMessage": "Kunci Rahasia"
   },
   "externalBackendSection.secretKeyHelp": {
-    "defaultMessage": "Kunci rahasia yang dikonfigurasi pada server Goose (GOOSE_SERVER__SECRET_KEY)"
+    "defaultMessage": "The secret key configured on the external backend (GOOSE_SERVER__SECRET_KEY)."
   },
   "externalBackendSection.secretKeyPlaceholder": {
     "defaultMessage": "Masukkan kunci rahasia server"
@@ -1206,10 +1206,10 @@
     "defaultMessage": "URL Server"
   },
   "externalBackendSection.serverUrlHelp": {
-    "defaultMessage": "Enter the HTTP(S) base URL. Goose checks /status and connects to /acp under this base."
+    "defaultMessage": "Enter the HTTP(S) base URL. SHIP-OS Agent checks /status and connects to /acp under this base."
   },
   "externalBackendSection.title": {
-    "defaultMessage": "Server Goose"
+    "defaultMessage": "External Backend (ACP)"
   },
   "externalBackendSection.urlBaseError": {
     "defaultMessage": "URL must be the backend base URL before /acp, without query parameters or fragments"
@@ -1233,7 +1233,7 @@
     "defaultMessage": "Pengembang"
   },
   "goosehintsModal.dialogDescription": {
-    "defaultMessage": "Berikan konteks tambahan tentang proyek Anda untuk meningkatkan komunikasi dengan Goose"
+    "defaultMessage": "Provide additional context about your project to improve communication with Goose"
   },
   "goosehintsModal.dialogTitle": {
     "defaultMessage": "Konfigurasikan Petunjuk Proyek (.goosehints)"
@@ -1254,7 +1254,7 @@
     "defaultMessage": "File .goosehints ditemukan di: {filePath}"
   },
   "goosehintsModal.helpText1": {
-    "defaultMessage": ".goosehints adalah file teks yang digunakan untuk memberikan konteks tambahan tentang proyek Anda dan meningkatkan komunikasi dengan Goose."
+    "defaultMessage": ".goosehints is a text file used to provide additional context about your project and improve the communication with Goose."
   },
   "goosehintsModal.helpText2": {
     "defaultMessage": "Pastikan ekstensi {bold} diaktifkan di halaman ekstensi. Ekstensi ini diperlukan untuk menggunakan .goosehints. Anda perlu memulai ulang sesi agar pembaruan .goosehints berlaku."
@@ -1281,7 +1281,7 @@
     "defaultMessage": "Konfigurasikan"
   },
   "goosehintsSection.description": {
-    "defaultMessage": "Konfigurasikan file .goosehints proyek Anda untuk memberikan konteks tambahan ke Goose"
+    "defaultMessage": "Configure your project's .goosehints file to provide additional context to Goose"
   },
   "goosehintsSection.title": {
     "defaultMessage": "Petunjuk Proyek (.goosehints)"
@@ -1566,13 +1566,13 @@
     "defaultMessage": "Pintasan Aplikasi"
   },
   "keyboardShortcuts.categoryApplicationDescription": {
-    "defaultMessage": "Pintasan ini berfungsi saat Goose menjadi aplikasi aktif"
+    "defaultMessage": "These shortcuts work when SHIP-OS Agent is the active application"
   },
   "keyboardShortcuts.categoryGlobal": {
     "defaultMessage": "Pintasan Global"
   },
   "keyboardShortcuts.categoryGlobalDescription": {
-    "defaultMessage": "Pintasan ini berfungsi di seluruh sistem, bahkan saat Goose tidak difokuskan"
+    "defaultMessage": "These shortcuts work system-wide, even when SHIP-OS Agent is not focused"
   },
   "keyboardShortcuts.categorySearch": {
     "defaultMessage": "Pintasan Pencarian"
@@ -1614,10 +1614,10 @@
     "defaultMessage": "Cari Sebelumnya"
   },
   "keyboardShortcuts.focusWindowDescription": {
-    "defaultMessage": "Bawa jendela Goose ke depan dari mana saja"
+    "defaultMessage": "Bring SHIP-OS Agent window to front from anywhere"
   },
   "keyboardShortcuts.focusWindowLabel": {
-    "defaultMessage": "Fokuskan Jendela Goose"
+    "defaultMessage": "Focus SHIP-OS Agent Window"
   },
   "keyboardShortcuts.loading": {
     "defaultMessage": "Memuat..."
@@ -1629,7 +1629,7 @@
     "defaultMessage": "Obrolan Baru"
   },
   "keyboardShortcuts.newChatWindowDescription": {
-    "defaultMessage": "Buka jendela Goose baru"
+    "defaultMessage": "Open a new SHIP-OS Agent window"
   },
   "keyboardShortcuts.newChatWindowLabel": {
     "defaultMessage": "Jendela Obrolan Baru"
@@ -1668,7 +1668,7 @@
     "defaultMessage": "Atur Ulang ke Default"
   },
   "keyboardShortcuts.restartDescription": {
-    "defaultMessage": "Perubahan pada pintasan aplikasi (seperti Obrolan Baru, Pengaturan, dll.) memerlukan memulai ulang Goose agar berlaku. Pintasan global (Fokuskan Jendela, Peluncur Cepat) berfungsi segera."
+    "defaultMessage": "Changes to application shortcuts (like New Chat, Settings, etc.) require restarting SHIP-OS Agent to take effect. Global shortcuts (Focus Window, Quick Launcher) work immediately."
   },
   "keyboardShortcuts.restartRequired": {
     "defaultMessage": "Perlu Memulai Ulang"
@@ -2397,7 +2397,7 @@
     "defaultMessage": "Server mungkin sedang dimulai atau tidak tersedia untuk sementara."
   },
   "onboardingGuard.checkProviderErrorTitle": {
-    "defaultMessage": "Tidak dapat terhubung ke server Goose"
+    "defaultMessage": "Unable to connect to SHIP-OS Agent server"
   },
   "onboardingGuard.retry": {
     "defaultMessage": "Coba Lagi"
@@ -3789,7 +3789,7 @@
     "defaultMessage": "Riwayat obrolan"
   },
   "sessions.chatHistoryDesc": {
-    "defaultMessage": "Lihat dan cari percakapan Anda sebelumnya dengan Goose. {shortcut} untuk mencari."
+    "defaultMessage": "View and search your past conversations with SHIP-OS Agent. {shortcut} to search."
   },
   "sessions.close": {
     "defaultMessage": "Tutup"
@@ -3825,7 +3825,7 @@
     "defaultMessage": "Impor Tautan"
   },
   "sessions.importNostr.description": {
-    "defaultMessage": "Tempel tautan berbagi Nostr Goose untuk mengambil, mendekripsi, dan mengimpor sesi."
+    "defaultMessage": "Paste a SHIP-OS Agent Nostr share link to fetch, decrypt, and import the session."
   },
   "sessions.importNostr.placeholder": {
     "defaultMessage": "goose://sessions/nostr?nevent=...&key=..."
@@ -4038,7 +4038,7 @@
     "defaultMessage": "Buka Pengaturan"
   },
   "settings.notifications.task.description": {
-    "defaultMessage": "Beri tahu saat Goose menyelesaikan tugas selagi jendela berada di latar belakang"
+    "defaultMessage": "Notify when SHIP-OS Agent finishes a task while the window is in the background"
   },
   "settings.notifications.task.title": {
     "defaultMessage": "Notifikasi penyelesaian tugas"
@@ -4134,7 +4134,7 @@
     "defaultMessage": "Cari keterampilan..."
   },
   "skillsView.skillsDescription": {
-    "defaultMessage": "Lihat keterampilan terpasang yang memperluas kemampuan Goose. {shortcut} untuk mencari."
+    "defaultMessage": "View installed skills that extend SHIP-OS Agent capabilities. {shortcut} to search."
   },
   "skillsView.skillsTitle": {
     "defaultMessage": "Keterampilan"
@@ -4485,10 +4485,10 @@
     "defaultMessage": "Izinkan {toolName}?"
   },
   "toolConfirmation.gooseWouldLikeToCallWithName": {
-    "defaultMessage": "Goose ingin memanggil {toolName}. Izinkan?"
+    "defaultMessage": "SHIP-OS Agent would like to call {toolName}. Allow?"
   },
   "updateSection.autoDownload": {
-    "defaultMessage": "Goose akan mengunduh pembaruan di latar belakang dan menginstalnya saat Anda keluar atau memulai ulang berikutnya."
+    "defaultMessage": "Goose will download the update in the background and install it the next time you quit or restart."
   },
   "updateSection.autoDownloadDisabledByEnv": {
     "defaultMessage": "Pengunduhan otomatis dinonaktifkan melalui variabel lingkungan GOOSE_DISABLE_AUTO_DOWNLOAD."
@@ -4512,7 +4512,7 @@
     "defaultMessage": "Nonaktifkan pengunduhan pembaruan otomatis"
   },
   "updateSection.disableAutoDownloadDesc": {
-    "defaultMessage": "Saat diaktifkan, Goose akan memberi tahu Anda tentang versi baru tetapi tidak akan mengunduhnya secara otomatis."
+    "defaultMessage": "When enabled, Goose will notify you of new versions but will not download them automatically."
   },
   "updateSection.downloadNow": {
     "defaultMessage": "Unduh Sekarang"
@@ -4545,7 +4545,7 @@
     "defaultMessage": "Instalasi manual diperlukan untuk metode pembaruan ini."
   },
   "updateSection.readyInstallAuto": {
-    "defaultMessage": "✓ Pembaruan sudah siap. Mulai ulang Goose untuk menyelesaikan pemasangan, atau keluar saat Anda selesai."
+    "defaultMessage": "✓ Update is ready. Restart Goose to finish installing it, or quit when you're done."
   },
   "updateSection.readyInstallManual": {
     "defaultMessage": "✓ Pembaruan sudah siap! Klik \"Install & Restart\" untuk petunjuk pemasangan."

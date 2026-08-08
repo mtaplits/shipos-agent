@@ -222,13 +222,13 @@
     "defaultMessage": "Waiting for images to save..."
   },
   "chatSettings.modeDescription": {
-    "defaultMessage": "Choose the default mode Goose uses for new sessions. Existing sessions keep their current mode."
+    "defaultMessage": "Choose the default mode SHIP-OS Agent uses for new sessions. Existing sessions keep their current mode."
   },
   "chatSettings.modeTitle": {
     "defaultMessage": "Default Mode"
   },
   "chatSettings.responseStylesDescription": {
-    "defaultMessage": "Choose how Goose should format and style its responses"
+    "defaultMessage": "Choose how SHIP-OS Agent should format and style its responses"
   },
   "chatSettings.responseStylesTitle": {
     "defaultMessage": "Response Styles"
@@ -324,7 +324,7 @@
     "defaultMessage": "Max Turns"
   },
   "conversationLimitsDropdown.maxTurnsDescription": {
-    "defaultMessage": "Maximum agent turns before Goose asks for user input"
+    "defaultMessage": "Maximum agent turns before SHIP-OS Agent asks for user input"
   },
   "costTracker.costUnavailable": {
     "defaultMessage": "Cost data not available for {model} ({inputTokens} input, {outputTokens} output tokens)"
@@ -936,7 +936,7 @@
     "defaultMessage": "Information request was cancelled."
   },
   "elicitationRequest.defaultMessage": {
-    "defaultMessage": "Goose needs some information from you."
+    "defaultMessage": "SHIP-OS Agent needs some information from you."
   },
   "elicitationRequest.expired": {
     "defaultMessage": "This request has expired. The extension will need to ask again."
@@ -981,7 +981,7 @@
     "defaultMessage": "An error occurred."
   },
   "errorBoundary.errorWithVersion": {
-    "defaultMessage": "An error occurred in Goose v{version}."
+    "defaultMessage": "An error occurred in SHIP-OS Agent v{version}."
   },
   "errorBoundary.heading": {
     "defaultMessage": "Honk!"
@@ -1185,13 +1185,13 @@
     "defaultMessage": "AA:BB:CC:... or sha256/base64"
   },
   "externalBackendSection.description": {
-    "defaultMessage": "By default Goose starts a local backend. Use this to connect to an external ACP-compatible backend."
+    "defaultMessage": "By default SHIP-OS Agent starts a local backend. Use this to connect to an external ACP-compatible backend."
   },
   "externalBackendSection.fingerprintRequiresHttps": {
     "defaultMessage": "Certificate fingerprint requires an https URL"
   },
   "externalBackendSection.restartNote": {
-    "defaultMessage": "Changes apply to new chat windows. Restart Goose to update existing windows."
+    "defaultMessage": "Changes apply to new chat windows. Restart SHIP-OS Agent to update existing windows."
   },
   "externalBackendSection.secretKey": {
     "defaultMessage": "Secret Key"
@@ -1206,7 +1206,7 @@
     "defaultMessage": "Backend Base URL"
   },
   "externalBackendSection.serverUrlHelp": {
-    "defaultMessage": "Enter the HTTP(S) base URL. Goose checks /status and connects to /acp under this base."
+    "defaultMessage": "Enter the HTTP(S) base URL. SHIP-OS Agent checks /status and connects to /acp under this base."
   },
   "externalBackendSection.title": {
     "defaultMessage": "External Backend (ACP)"
@@ -1566,13 +1566,13 @@
     "defaultMessage": "Application Shortcuts"
   },
   "keyboardShortcuts.categoryApplicationDescription": {
-    "defaultMessage": "These shortcuts work when Goose is the active application"
+    "defaultMessage": "These shortcuts work when SHIP-OS Agent is the active application"
   },
   "keyboardShortcuts.categoryGlobal": {
     "defaultMessage": "Global Shortcuts"
   },
   "keyboardShortcuts.categoryGlobalDescription": {
-    "defaultMessage": "These shortcuts work system-wide, even when Goose is not focused"
+    "defaultMessage": "These shortcuts work system-wide, even when SHIP-OS Agent is not focused"
   },
   "keyboardShortcuts.categorySearch": {
     "defaultMessage": "Search Shortcuts"
@@ -1614,10 +1614,10 @@
     "defaultMessage": "Find Previous"
   },
   "keyboardShortcuts.focusWindowDescription": {
-    "defaultMessage": "Bring Goose window to front from anywhere"
+    "defaultMessage": "Bring SHIP-OS Agent window to front from anywhere"
   },
   "keyboardShortcuts.focusWindowLabel": {
-    "defaultMessage": "Focus Goose Window"
+    "defaultMessage": "Focus SHIP-OS Agent Window"
   },
   "keyboardShortcuts.loading": {
     "defaultMessage": "Loading..."
@@ -1629,7 +1629,7 @@
     "defaultMessage": "New Chat"
   },
   "keyboardShortcuts.newChatWindowDescription": {
-    "defaultMessage": "Open a new Goose window"
+    "defaultMessage": "Open a new SHIP-OS Agent window"
   },
   "keyboardShortcuts.newChatWindowLabel": {
     "defaultMessage": "New Chat Window"
@@ -1668,7 +1668,7 @@
     "defaultMessage": "Reset to Defaults"
   },
   "keyboardShortcuts.restartDescription": {
-    "defaultMessage": "Changes to application shortcuts (like New Chat, Settings, etc.) require restarting Goose to take effect. Global shortcuts (Focus Window, Quick Launcher) work immediately."
+    "defaultMessage": "Changes to application shortcuts (like New Chat, Settings, etc.) require restarting SHIP-OS Agent to take effect. Global shortcuts (Focus Window, Quick Launcher) work immediately."
   },
   "keyboardShortcuts.restartRequired": {
     "defaultMessage": "Restart Required"
@@ -2400,7 +2400,7 @@
     "defaultMessage": "The server may be starting up or temporarily unavailable."
   },
   "onboardingGuard.checkProviderErrorTitle": {
-    "defaultMessage": "Unable to connect to Goose server"
+    "defaultMessage": "Unable to connect to SHIP-OS Agent server"
   },
   "onboardingGuard.retry": {
     "defaultMessage": "Retry"
@@ -3792,7 +3792,7 @@
     "defaultMessage": "Chat history"
   },
   "sessions.chatHistoryDesc": {
-    "defaultMessage": "View and search your past conversations with Goose. {shortcut} to search."
+    "defaultMessage": "View and search your past conversations with SHIP-OS Agent. {shortcut} to search."
   },
   "sessions.close": {
     "defaultMessage": "Close"
@@ -3828,7 +3828,7 @@
     "defaultMessage": "Import Link"
   },
   "sessions.importNostr.description": {
-    "defaultMessage": "Paste a Goose Nostr share link to fetch, decrypt, and import the session."
+    "defaultMessage": "Paste a SHIP-OS Agent Nostr share link to fetch, decrypt, and import the session."
   },
   "sessions.importNostr.placeholder": {
     "defaultMessage": "goose://sessions/nostr?nevent=...&key=..."
@@ -4041,7 +4041,7 @@
     "defaultMessage": "Open Settings"
   },
   "settings.notifications.task.description": {
-    "defaultMessage": "Notify when Goose finishes a task while the window is in the background"
+    "defaultMessage": "Notify when SHIP-OS Agent finishes a task while the window is in the background"
   },
   "settings.notifications.task.title": {
     "defaultMessage": "Task completion notifications"
@@ -4176,7 +4176,7 @@
     "defaultMessage": "Search skills..."
   },
   "skillsView.skillsDescription": {
-    "defaultMessage": "View installed skills that extend Goose capabilities. {shortcut} to search."
+    "defaultMessage": "View installed skills that extend SHIP-OS Agent capabilities. {shortcut} to search."
   },
   "skillsView.skillsTitle": {
     "defaultMessage": "Skills"
@@ -4527,7 +4527,7 @@
     "defaultMessage": "Allow {toolName}?"
   },
   "toolConfirmation.gooseWouldLikeToCallWithName": {
-    "defaultMessage": "Goose would like to call {toolName}. Allow?"
+    "defaultMessage": "SHIP-OS Agent would like to call {toolName}. Allow?"
   },
   "updateSection.autoDownload": {
     "defaultMessage": "Goose will download the update in the background and install it the next time you quit or restart."

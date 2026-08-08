@@ -168,10 +168,10 @@
     "defaultMessage": "Avvia"
   },
   "chat.notification.taskComplete.body": {
-    "defaultMessage": "Fai clic qui per riportare Goose in primo piano."
+    "defaultMessage": "Click here to bring Goose back into focus."
   },
   "chat.notification.taskComplete.title": {
-    "defaultMessage": "Goose ha completato l'attività."
+    "defaultMessage": "Goose finished the task."
   },
   "chatInput.contextWindow": {
     "defaultMessage": "Finestra di contesto"
@@ -222,13 +222,13 @@
     "defaultMessage": "In attesa del salvataggio delle immagini..."
   },
   "chatSettings.modeDescription": {
-    "defaultMessage": "Scegli la modalità predefinita che Goose usa per le nuove sessioni. Le sessioni esistenti mantengono la loro modalità corrente."
+    "defaultMessage": "Choose the default mode SHIP-OS Agent uses for new sessions. Existing sessions keep their current mode."
   },
   "chatSettings.modeTitle": {
     "defaultMessage": "Modalità predefinita"
   },
   "chatSettings.responseStylesDescription": {
-    "defaultMessage": "Scegli come Goose deve formattare e definire lo stile delle sue risposte"
+    "defaultMessage": "Choose how SHIP-OS Agent should format and style its responses"
   },
   "chatSettings.responseStylesTitle": {
     "defaultMessage": "Stili di risposta"
@@ -324,7 +324,7 @@
     "defaultMessage": "Numero massimo di turni"
   },
   "conversationLimitsDropdown.maxTurnsDescription": {
-    "defaultMessage": "Numero massimo di turni dell'agente prima che Goose richieda l'input dell'utente"
+    "defaultMessage": "Maximum agent turns before SHIP-OS Agent asks for user input"
   },
   "costTracker.costUnavailable": {
     "defaultMessage": "Dati sui costi non disponibili per {model} ({inputTokens} token di input, {outputTokens} token di output)"
@@ -936,7 +936,7 @@
     "defaultMessage": "La richiesta di informazioni è stata annullata."
   },
   "elicitationRequest.defaultMessage": {
-    "defaultMessage": "Goose ha bisogno di alcune informazioni da te."
+    "defaultMessage": "SHIP-OS Agent needs some information from you."
   },
   "elicitationRequest.expired": {
     "defaultMessage": "Questa richiesta è scaduta. L'estensione dovrà chiedere di nuovo."
@@ -981,7 +981,7 @@
     "defaultMessage": "Si è verificato un errore."
   },
   "errorBoundary.errorWithVersion": {
-    "defaultMessage": "Si è verificato un errore in Goose v{version}."
+    "defaultMessage": "An error occurred in SHIP-OS Agent v{version}."
   },
   "errorBoundary.heading": {
     "defaultMessage": "Honk!"
@@ -1167,7 +1167,7 @@
     "defaultMessage": "Le estensioni abilitate qui vengono usate come predefinite per le nuove chat. Puoi anche attivare o disattivare le estensioni attive durante una chat."
   },
   "extensionsView.description": {
-    "defaultMessage": "Queste estensioni usano il Model Context Protocol (MCP). Possono ampliare le capacità di Goose tramite tre componenti principali: Prompt, Risorse e Strumenti. {searchShortcut} per cercare."
+    "defaultMessage": "These extensions use the Model Context Protocol (MCP). They can expand Goose's capabilities using three main components: Prompts, Resources, and Tools. {searchShortcut} to search."
   },
   "extensionsView.heading": {
     "defaultMessage": "Estensioni"
@@ -1191,13 +1191,13 @@
     "defaultMessage": "Certificate fingerprint requires an https URL"
   },
   "externalBackendSection.restartNote": {
-    "defaultMessage": "Le modifiche richiedono il riavvio di Goose per avere effetto. Le nuove finestre di chat si connetteranno al server esterno."
+    "defaultMessage": "Changes apply to new chat windows. Restart SHIP-OS Agent to update existing windows."
   },
   "externalBackendSection.secretKey": {
     "defaultMessage": "Chiave segreta"
   },
   "externalBackendSection.secretKeyHelp": {
-    "defaultMessage": "La chiave segreta configurata sul server Goose (GOOSE_SERVER__SECRET_KEY)"
+    "defaultMessage": "The secret key configured on the external backend (GOOSE_SERVER__SECRET_KEY)."
   },
   "externalBackendSection.secretKeyPlaceholder": {
     "defaultMessage": "Inserisci la chiave segreta del server"
@@ -1206,10 +1206,10 @@
     "defaultMessage": "URL del server"
   },
   "externalBackendSection.serverUrlHelp": {
-    "defaultMessage": "Enter the HTTP(S) base URL. Goose checks /status and connects to /acp under this base."
+    "defaultMessage": "Enter the HTTP(S) base URL. SHIP-OS Agent checks /status and connects to /acp under this base."
   },
   "externalBackendSection.title": {
-    "defaultMessage": "Server Goose"
+    "defaultMessage": "External Backend (ACP)"
   },
   "externalBackendSection.urlBaseError": {
     "defaultMessage": "URL must be the backend base URL before /acp, without query parameters or fragments"
@@ -1233,7 +1233,7 @@
     "defaultMessage": "Developer"
   },
   "goosehintsModal.dialogDescription": {
-    "defaultMessage": "Fornisci ulteriore contesto sul tuo progetto per migliorare la comunicazione con Goose"
+    "defaultMessage": "Provide additional context about your project to improve communication with Goose"
   },
   "goosehintsModal.dialogTitle": {
     "defaultMessage": "Configura i suggerimenti del progetto (.goosehints)"
@@ -1254,7 +1254,7 @@
     "defaultMessage": "File .goosehints trovato in: {filePath}"
   },
   "goosehintsModal.helpText1": {
-    "defaultMessage": ".goosehints è un file di testo usato per fornire ulteriore contesto sul tuo progetto e migliorare la comunicazione con Goose."
+    "defaultMessage": ".goosehints is a text file used to provide additional context about your project and improve the communication with Goose."
   },
   "goosehintsModal.helpText2": {
     "defaultMessage": "Assicurati che l'estensione {bold} sia abilitata nella pagina delle estensioni. Questa estensione è necessaria per usare .goosehints. Dovrai riavviare la sessione affinché gli aggiornamenti di .goosehints abbiano effetto."
@@ -1281,7 +1281,7 @@
     "defaultMessage": "Configura"
   },
   "goosehintsSection.description": {
-    "defaultMessage": "Configura il file .goosehints del tuo progetto per fornire ulteriore contesto a Goose"
+    "defaultMessage": "Configure your project's .goosehints file to provide additional context to Goose"
   },
   "goosehintsSection.title": {
     "defaultMessage": "Suggerimenti del progetto (.goosehints)"
@@ -1566,13 +1566,13 @@
     "defaultMessage": "Scorciatoie dell'applicazione"
   },
   "keyboardShortcuts.categoryApplicationDescription": {
-    "defaultMessage": "Queste scorciatoie funzionano quando Goose è l'applicazione attiva"
+    "defaultMessage": "These shortcuts work when SHIP-OS Agent is the active application"
   },
   "keyboardShortcuts.categoryGlobal": {
     "defaultMessage": "Scorciatoie globali"
   },
   "keyboardShortcuts.categoryGlobalDescription": {
-    "defaultMessage": "Queste scorciatoie funzionano a livello di sistema, anche quando Goose non è in primo piano"
+    "defaultMessage": "These shortcuts work system-wide, even when SHIP-OS Agent is not focused"
   },
   "keyboardShortcuts.categorySearch": {
     "defaultMessage": "Scorciatoie di ricerca"
@@ -1614,10 +1614,10 @@
     "defaultMessage": "Trova precedente"
   },
   "keyboardShortcuts.focusWindowDescription": {
-    "defaultMessage": "Porta la finestra di Goose in primo piano da qualsiasi punto"
+    "defaultMessage": "Bring SHIP-OS Agent window to front from anywhere"
   },
   "keyboardShortcuts.focusWindowLabel": {
-    "defaultMessage": "Metti a fuoco la finestra di Goose"
+    "defaultMessage": "Focus SHIP-OS Agent Window"
   },
   "keyboardShortcuts.loading": {
     "defaultMessage": "Caricamento in corso..."
@@ -1629,7 +1629,7 @@
     "defaultMessage": "Nuova chat"
   },
   "keyboardShortcuts.newChatWindowDescription": {
-    "defaultMessage": "Apri una nuova finestra di Goose"
+    "defaultMessage": "Open a new SHIP-OS Agent window"
   },
   "keyboardShortcuts.newChatWindowLabel": {
     "defaultMessage": "Nuova finestra di chat"
@@ -1668,7 +1668,7 @@
     "defaultMessage": "Ripristina i valori predefiniti"
   },
   "keyboardShortcuts.restartDescription": {
-    "defaultMessage": "Le modifiche alle scorciatoie dell'applicazione (come Nuova chat, Impostazioni, ecc.) richiedono il riavvio di Goose per avere effetto. Le scorciatoie globali (Metti a fuoco la finestra, Avvio rapido) funzionano immediatamente."
+    "defaultMessage": "Changes to application shortcuts (like New Chat, Settings, etc.) require restarting SHIP-OS Agent to take effect. Global shortcuts (Focus Window, Quick Launcher) work immediately."
   },
   "keyboardShortcuts.restartRequired": {
     "defaultMessage": "Riavvio necessario"
@@ -2397,7 +2397,7 @@
     "defaultMessage": "Il server potrebbe essere in fase di avvio o temporaneamente non disponibile."
   },
   "onboardingGuard.checkProviderErrorTitle": {
-    "defaultMessage": "Impossibile connettersi al server Goose"
+    "defaultMessage": "Unable to connect to SHIP-OS Agent server"
   },
   "onboardingGuard.retry": {
     "defaultMessage": "Riprova"
@@ -3789,7 +3789,7 @@
     "defaultMessage": "Cronologia chat"
   },
   "sessions.chatHistoryDesc": {
-    "defaultMessage": "Visualizza e cerca le tue conversazioni passate con Goose. {shortcut} per cercare."
+    "defaultMessage": "View and search your past conversations with SHIP-OS Agent. {shortcut} to search."
   },
   "sessions.close": {
     "defaultMessage": "Chiudi"
@@ -3825,7 +3825,7 @@
     "defaultMessage": "Importa link"
   },
   "sessions.importNostr.description": {
-    "defaultMessage": "Incolla un link di condivisione Nostr di Goose per recuperare, decrittografare e importare la sessione."
+    "defaultMessage": "Paste a SHIP-OS Agent Nostr share link to fetch, decrypt, and import the session."
   },
   "sessions.importNostr.placeholder": {
     "defaultMessage": "goose://sessions/nostr?nevent=...&key=..."
@@ -4038,7 +4038,7 @@
     "defaultMessage": "Apri Impostazioni"
   },
   "settings.notifications.task.description": {
-    "defaultMessage": "Notifica quando Goose completa un'attività mentre la finestra è in secondo piano"
+    "defaultMessage": "Notify when SHIP-OS Agent finishes a task while the window is in the background"
   },
   "settings.notifications.task.title": {
     "defaultMessage": "Notifiche di completamento attività"
@@ -4134,7 +4134,7 @@
     "defaultMessage": "Cerca competenze..."
   },
   "skillsView.skillsDescription": {
-    "defaultMessage": "Visualizza le competenze installate che estendono le funzionalità di Goose. {shortcut} per cercare."
+    "defaultMessage": "View installed skills that extend SHIP-OS Agent capabilities. {shortcut} to search."
   },
   "skillsView.skillsTitle": {
     "defaultMessage": "Competenze"
@@ -4485,10 +4485,10 @@
     "defaultMessage": "Consentire {toolName}?"
   },
   "toolConfirmation.gooseWouldLikeToCallWithName": {
-    "defaultMessage": "Goose desidera richiamare {toolName}. Consentire?"
+    "defaultMessage": "SHIP-OS Agent would like to call {toolName}. Allow?"
   },
   "updateSection.autoDownload": {
-    "defaultMessage": "Goose scaricherà l'aggiornamento in background e lo installerà al prossimo arresto o riavvio."
+    "defaultMessage": "Goose will download the update in the background and install it the next time you quit or restart."
   },
   "updateSection.autoDownloadDisabledByEnv": {
     "defaultMessage": "I download automatici sono disabilitati tramite la variabile d'ambiente GOOSE_DISABLE_AUTO_DOWNLOAD."
@@ -4512,7 +4512,7 @@
     "defaultMessage": "Disabilita i download automatici degli aggiornamenti"
   },
   "updateSection.disableAutoDownloadDesc": {
-    "defaultMessage": "Se abilitato, Goose ti avviserà delle nuove versioni ma non le scaricherà automaticamente."
+    "defaultMessage": "When enabled, Goose will notify you of new versions but will not download them automatically."
   },
   "updateSection.downloadNow": {
     "defaultMessage": "Scarica ora"
@@ -4545,7 +4545,7 @@
     "defaultMessage": "Installazione manuale richiesta per questo metodo di aggiornamento."
   },
   "updateSection.readyInstallAuto": {
-    "defaultMessage": "✓ L'aggiornamento è pronto. Riavvia Goose per completarne l'installazione, oppure chiudilo quando hai finito."
+    "defaultMessage": "✓ Update is ready. Restart Goose to finish installing it, or quit when you're done."
   },
   "updateSection.readyInstallManual": {
     "defaultMessage": "✓ L'aggiornamento è pronto! Fai clic su \"Installa e riavvia\" per le istruzioni di installazione."

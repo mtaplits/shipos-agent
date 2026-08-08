@@ -168,10 +168,10 @@
     "defaultMessage": "Başlat"
   },
   "chat.notification.taskComplete.body": {
-    "defaultMessage": "Goose'yi tekrar odağa almak için buraya tıklayın."
+    "defaultMessage": "Click here to bring Goose back into focus."
   },
   "chat.notification.taskComplete.title": {
-    "defaultMessage": "Goose görevi tamamladı."
+    "defaultMessage": "Goose finished the task."
   },
   "chatInput.contextWindow": {
     "defaultMessage": "Bağlam penceresi"
@@ -222,13 +222,13 @@
     "defaultMessage": "Resimlerin kaydedilmesi bekleniyor..."
   },
   "chatSettings.modeDescription": {
-    "defaultMessage": "Goose'nin araçlar ve uzantılarla nasıl etkileşimde bulunacağını yapılandırın"
+    "defaultMessage": "Choose the default mode SHIP-OS Agent uses for new sessions. Existing sessions keep their current mode."
   },
   "chatSettings.modeTitle": {
     "defaultMessage": "Mod"
   },
   "chatSettings.responseStylesDescription": {
-    "defaultMessage": "Goose'nin yanıtlarını nasıl biçimlendireceğini ve stillendireceğini seçin"
+    "defaultMessage": "Choose how SHIP-OS Agent should format and style its responses"
   },
   "chatSettings.responseStylesTitle": {
     "defaultMessage": "Yanıt Stilleri"
@@ -324,7 +324,7 @@
     "defaultMessage": "Maksimum Dönüş"
   },
   "conversationLimitsDropdown.maxTurnsDescription": {
-    "defaultMessage": "Goose kullanıcı girişi istemeden önce maksimum aracı dönüşü"
+    "defaultMessage": "Maximum agent turns before SHIP-OS Agent asks for user input"
   },
   "costTracker.costUnavailable": {
     "defaultMessage": "{model} için maliyet verileri mevcut değil ({inputTokens} girişi, {outputTokens} çıkış jetonları)"
@@ -936,7 +936,7 @@
     "defaultMessage": "Bilgi talebi iptal edildi."
   },
   "elicitationRequest.defaultMessage": {
-    "defaultMessage": "Goose'nin sizden bazı bilgilere ihtiyacı var."
+    "defaultMessage": "SHIP-OS Agent needs some information from you."
   },
   "elicitationRequest.expired": {
     "defaultMessage": "Bu isteğin süresi doldu. Uzantının tekrar sorması gerekecek."
@@ -981,7 +981,7 @@
     "defaultMessage": "Bir hata oluştu."
   },
   "errorBoundary.errorWithVersion": {
-    "defaultMessage": "Goose v{version}'de bir hata oluştu."
+    "defaultMessage": "An error occurred in SHIP-OS Agent v{version}."
   },
   "errorBoundary.heading": {
     "defaultMessage": "Korna!"
@@ -1167,7 +1167,7 @@
     "defaultMessage": "Burada etkinleştirilen uzantılar, yeni sohbetler için varsayılan olarak kullanılır. Ayrıca sohbet sırasında etkin uzantıları da değiştirebilirsiniz."
   },
   "extensionsView.description": {
-    "defaultMessage": "Bu uzantılar Model Bağlam Protokolünü (MCP) kullanır. Üç ana bileşeni kullanarak Goose'nin yeteneklerini genişletebilirler: İstemler, Kaynaklar ve Araçlar. Aramak için {searchShortcut}."
+    "defaultMessage": "These extensions use the Model Context Protocol (MCP). They can expand Goose's capabilities using three main components: Prompts, Resources, and Tools. {searchShortcut} to search."
   },
   "extensionsView.heading": {
     "defaultMessage": "Uzantılar"
@@ -1191,13 +1191,13 @@
     "defaultMessage": "Certificate fingerprint requires an https URL"
   },
   "externalBackendSection.restartNote": {
-    "defaultMessage": "Değişikliklerin etkili olması için Goose'nin yeniden başlatılması gerekir. Yeni sohbet pencereleri harici sunucuya bağlanacaktır."
+    "defaultMessage": "Changes apply to new chat windows. Restart SHIP-OS Agent to update existing windows."
   },
   "externalBackendSection.secretKey": {
     "defaultMessage": "Gizli Anahtar"
   },
   "externalBackendSection.secretKeyHelp": {
-    "defaultMessage": "Goose sunucusunda yapılandırılan gizli anahtar (GOOSE_SERVER__SECRET_KEY)"
+    "defaultMessage": "The secret key configured on the external backend (GOOSE_SERVER__SECRET_KEY)."
   },
   "externalBackendSection.secretKeyPlaceholder": {
     "defaultMessage": "Sunucunun gizli anahtarını girin"
@@ -1206,10 +1206,10 @@
     "defaultMessage": "Sunucu URL'si"
   },
   "externalBackendSection.serverUrlHelp": {
-    "defaultMessage": "Enter the HTTP(S) base URL. Goose checks /status and connects to /acp under this base."
+    "defaultMessage": "Enter the HTTP(S) base URL. SHIP-OS Agent checks /status and connects to /acp under this base."
   },
   "externalBackendSection.title": {
-    "defaultMessage": "Goose Sunucu"
+    "defaultMessage": "External Backend (ACP)"
   },
   "externalBackendSection.urlBaseError": {
     "defaultMessage": "URL must be the backend base URL before /acp, without query parameters or fragments"
@@ -1233,7 +1233,7 @@
     "defaultMessage": "Geliştirici"
   },
   "goosehintsModal.dialogDescription": {
-    "defaultMessage": "Goose ile iletişimi geliştirmek için projeniz hakkında ek bağlam sağlayın"
+    "defaultMessage": "Provide additional context about your project to improve communication with Goose"
   },
   "goosehintsModal.dialogTitle": {
     "defaultMessage": "Proje İpuçlarını Yapılandırma (.goosehints)"
@@ -1254,7 +1254,7 @@
     "defaultMessage": ".goosehints dosyası şu konumda bulundu: {filePath}"
   },
   "goosehintsModal.helpText1": {
-    "defaultMessage": ".goosehints, projeniz hakkında ek bağlam sağlamak ve Goose ile iletişimi geliştirmek için kullanılan bir metin dosyasıdır."
+    "defaultMessage": ".goosehints is a text file used to provide additional context about your project and improve the communication with Goose."
   },
   "goosehintsModal.helpText2": {
     "defaultMessage": "Lütfen uzantılar sayfasında {bold} uzantısının etkinleştirildiğinden emin olun. Bu uzantı.goosehints'i kullanmak için gereklidir..goosehints güncellemelerinin etkili olması için oturumunuzu yeniden başlatmanız gerekir."
@@ -1281,7 +1281,7 @@
     "defaultMessage": "Yapılandır"
   },
   "goosehintsSection.description": {
-    "defaultMessage": "Goose'a ek bağlam sağlamak için projenizin.goosehints dosyasını yapılandırın"
+    "defaultMessage": "Configure your project's .goosehints file to provide additional context to Goose"
   },
   "goosehintsSection.title": {
     "defaultMessage": "Proje İpuçları (.goosehints)"
@@ -1566,13 +1566,13 @@
     "defaultMessage": "Uygulama Kısayolları"
   },
   "keyboardShortcuts.categoryApplicationDescription": {
-    "defaultMessage": "Bu kısayollar Goose etkin uygulama olduğunda çalışır"
+    "defaultMessage": "These shortcuts work when SHIP-OS Agent is the active application"
   },
   "keyboardShortcuts.categoryGlobal": {
     "defaultMessage": "Genel Kısayollar"
   },
   "keyboardShortcuts.categoryGlobalDescription": {
-    "defaultMessage": "Bu kısayollar, Goose odaklanmadığında bile sistem genelinde çalışır"
+    "defaultMessage": "These shortcuts work system-wide, even when SHIP-OS Agent is not focused"
   },
   "keyboardShortcuts.categorySearch": {
     "defaultMessage": "Arama Kısayolları"
@@ -1614,10 +1614,10 @@
     "defaultMessage": "Öncekini Bul"
   },
   "keyboardShortcuts.focusWindowDescription": {
-    "defaultMessage": "Goose penceresini istediğiniz yerden öne getirin"
+    "defaultMessage": "Bring SHIP-OS Agent window to front from anywhere"
   },
   "keyboardShortcuts.focusWindowLabel": {
-    "defaultMessage": "Odak Goose Penceresi"
+    "defaultMessage": "Focus SHIP-OS Agent Window"
   },
   "keyboardShortcuts.loading": {
     "defaultMessage": "Yükleniyor..."
@@ -1629,7 +1629,7 @@
     "defaultMessage": "Yeni Sohbet"
   },
   "keyboardShortcuts.newChatWindowDescription": {
-    "defaultMessage": "Yeni bir Goose penceresi aç"
+    "defaultMessage": "Open a new SHIP-OS Agent window"
   },
   "keyboardShortcuts.newChatWindowLabel": {
     "defaultMessage": "Yeni Sohbet Penceresi"
@@ -1668,7 +1668,7 @@
     "defaultMessage": "Varsayılanlara Sıfırla"
   },
   "keyboardShortcuts.restartDescription": {
-    "defaultMessage": "Uygulama kısayollarında yapılan değişikliklerin (Yeni Sohbet, Ayarlar vb.) etkili olması için Goose'nin yeniden başlatılması gerekir. Genel kısayollar (Odak Penceresi, Hızlı Başlatıcı) hemen çalışır."
+    "defaultMessage": "Changes to application shortcuts (like New Chat, Settings, etc.) require restarting SHIP-OS Agent to take effect. Global shortcuts (Focus Window, Quick Launcher) work immediately."
   },
   "keyboardShortcuts.restartRequired": {
     "defaultMessage": "Yeniden Başlatma Gerekli"
@@ -2397,7 +2397,7 @@
     "defaultMessage": "Sunucu başlatılıyor veya geçici olarak kullanılamıyor olabilir."
   },
   "onboardingGuard.checkProviderErrorTitle": {
-    "defaultMessage": "Goose sunucusuna bağlanılamıyor"
+    "defaultMessage": "Unable to connect to SHIP-OS Agent server"
   },
   "onboardingGuard.retry": {
     "defaultMessage": "Yeniden dene"
@@ -3789,7 +3789,7 @@
     "defaultMessage": "Sohbet geçmişi"
   },
   "sessions.chatHistoryDesc": {
-    "defaultMessage": "Goose ile geçmiş konuşmalarınızı görüntüleyin ve arayın. Aramak için {shortcut}."
+    "defaultMessage": "View and search your past conversations with SHIP-OS Agent. {shortcut} to search."
   },
   "sessions.close": {
     "defaultMessage": "Kapat"
@@ -3825,7 +3825,7 @@
     "defaultMessage": "Bağlantıyı İçe Aktar"
   },
   "sessions.importNostr.description": {
-    "defaultMessage": "Oturumu almak, şifresini çözmek ve içe aktarmak için bir Goose Nostr paylaşım bağlantısını yapıştırın."
+    "defaultMessage": "Paste a SHIP-OS Agent Nostr share link to fetch, decrypt, and import the session."
   },
   "sessions.importNostr.placeholder": {
     "defaultMessage": "goose://sessions/nostr?nevent=...&key=..."
@@ -4038,7 +4038,7 @@
     "defaultMessage": "Ayarları Aç"
   },
   "settings.notifications.task.description": {
-    "defaultMessage": "Pencere arka plandayken Goose bir görevi tamamladığında bildirim al"
+    "defaultMessage": "Notify when SHIP-OS Agent finishes a task while the window is in the background"
   },
   "settings.notifications.task.title": {
     "defaultMessage": "Görev tamamlama bildirimleri"
@@ -4134,7 +4134,7 @@
     "defaultMessage": "Arama becerileri..."
   },
   "skillsView.skillsDescription": {
-    "defaultMessage": "Goose yeteneklerini genişleten yüklü becerileri görüntüleyin. Aramak için {shortcut}."
+    "defaultMessage": "View installed skills that extend SHIP-OS Agent capabilities. {shortcut} to search."
   },
   "skillsView.skillsTitle": {
     "defaultMessage": "Beceriler"
@@ -4485,7 +4485,7 @@
     "defaultMessage": "{toolName}'ye izin verilsin mi?"
   },
   "toolConfirmation.gooseWouldLikeToCallWithName": {
-    "defaultMessage": "Goose, {toolName}'yi aramak istiyor. İzin vermek?"
+    "defaultMessage": "SHIP-OS Agent would like to call {toolName}. Allow?"
   },
   "updateSection.autoDownload": {
     "defaultMessage": "Güncelleme arka planda otomatik olarak indirilecektir."
@@ -4512,7 +4512,7 @@
     "defaultMessage": "Otomatik güncelleme indirmelerini devre dışı bırak"
   },
   "updateSection.disableAutoDownloadDesc": {
-    "defaultMessage": "Etkinleştirildiğinde, Goose yeni sürümleri bildirir ancak bunları otomatik olarak indirmez."
+    "defaultMessage": "When enabled, Goose will notify you of new versions but will not download them automatically."
   },
   "updateSection.downloadNow": {
     "defaultMessage": "Şimdi İndir"
@@ -4545,7 +4545,7 @@
     "defaultMessage": "Bu güncelleme yöntemi için manuel kurulum gereklidir."
   },
   "updateSection.readyInstallAuto": {
-    "defaultMessage": "✓ Güncelleme hazır! Goose'den çıktığınızda yüklenecektir."
+    "defaultMessage": "✓ Update is ready. Restart Goose to finish installing it, or quit when you're done."
   },
   "updateSection.readyInstallManual": {
     "defaultMessage": "✓ Güncelleme hazır! Kurulum talimatları için \"Yükle ve Yeniden Başlat\"a tıklayın."

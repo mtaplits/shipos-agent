@@ -168,10 +168,10 @@
     "defaultMessage": "Khởi chạy"
   },
   "chat.notification.taskComplete.body": {
-    "defaultMessage": "Nhấp vào đây để đưa Goose trở lại tiêu điểm."
+    "defaultMessage": "Click here to bring Goose back into focus."
   },
   "chat.notification.taskComplete.title": {
-    "defaultMessage": "Goose đã hoàn thành tác vụ."
+    "defaultMessage": "Goose finished the task."
   },
   "chatInput.contextWindow": {
     "defaultMessage": "Cửa sổ ngữ cảnh"
@@ -222,13 +222,13 @@
     "defaultMessage": "Đang chờ lưu hình ảnh..."
   },
   "chatSettings.modeDescription": {
-    "defaultMessage": "Chọn chế độ mặc định mà Goose sử dụng cho các phiên mới. Các phiên hiện có vẫn giữ chế độ hiện tại của chúng."
+    "defaultMessage": "Choose the default mode SHIP-OS Agent uses for new sessions. Existing sessions keep their current mode."
   },
   "chatSettings.modeTitle": {
     "defaultMessage": "Chế độ mặc định"
   },
   "chatSettings.responseStylesDescription": {
-    "defaultMessage": "Chọn cách Goose định dạng và tạo phong cách cho các phản hồi của mình"
+    "defaultMessage": "Choose how SHIP-OS Agent should format and style its responses"
   },
   "chatSettings.responseStylesTitle": {
     "defaultMessage": "Phong cách phản hồi"
@@ -324,7 +324,7 @@
     "defaultMessage": "Số lượt tối đa"
   },
   "conversationLimitsDropdown.maxTurnsDescription": {
-    "defaultMessage": "Số lượt tác nhân tối đa trước khi Goose yêu cầu người dùng nhập liệu"
+    "defaultMessage": "Maximum agent turns before SHIP-OS Agent asks for user input"
   },
   "costTracker.costUnavailable": {
     "defaultMessage": "Không có dữ liệu chi phí cho {model} ({inputTokens} token đầu vào, {outputTokens} token đầu ra)"
@@ -936,7 +936,7 @@
     "defaultMessage": "Yêu cầu thông tin đã bị hủy."
   },
   "elicitationRequest.defaultMessage": {
-    "defaultMessage": "Goose cần một số thông tin từ bạn."
+    "defaultMessage": "SHIP-OS Agent needs some information from you."
   },
   "elicitationRequest.expired": {
     "defaultMessage": "Yêu cầu này đã hết hạn. Tiện ích mở rộng sẽ cần hỏi lại."
@@ -981,7 +981,7 @@
     "defaultMessage": "Đã xảy ra lỗi."
   },
   "errorBoundary.errorWithVersion": {
-    "defaultMessage": "Đã xảy ra lỗi trong Goose v{version}."
+    "defaultMessage": "An error occurred in SHIP-OS Agent v{version}."
   },
   "errorBoundary.heading": {
     "defaultMessage": "Honk!"
@@ -1167,7 +1167,7 @@
     "defaultMessage": "Các tiện ích mở rộng được bật ở đây sẽ được dùng làm mặc định cho các cuộc trò chuyện mới. Bạn cũng có thể bật/tắt các tiện ích mở rộng đang hoạt động trong khi trò chuyện."
   },
   "extensionsView.description": {
-    "defaultMessage": "Các tiện ích mở rộng này sử dụng Model Context Protocol (MCP). Chúng có thể mở rộng khả năng của Goose bằng ba thành phần chính: Lời nhắc, Tài nguyên và Công cụ. {searchShortcut} để tìm kiếm."
+    "defaultMessage": "These extensions use the Model Context Protocol (MCP). They can expand Goose's capabilities using three main components: Prompts, Resources, and Tools. {searchShortcut} to search."
   },
   "extensionsView.heading": {
     "defaultMessage": "Tiện ích mở rộng"
@@ -1191,13 +1191,13 @@
     "defaultMessage": "Certificate fingerprint requires an https URL"
   },
   "externalBackendSection.restartNote": {
-    "defaultMessage": "Các thay đổi cần khởi động lại Goose để có hiệu lực. Các cửa sổ trò chuyện mới sẽ kết nối tới máy chủ bên ngoài."
+    "defaultMessage": "Changes apply to new chat windows. Restart SHIP-OS Agent to update existing windows."
   },
   "externalBackendSection.secretKey": {
     "defaultMessage": "Khóa bí mật"
   },
   "externalBackendSection.secretKeyHelp": {
-    "defaultMessage": "Khóa bí mật được cấu hình trên máy chủ Goose (GOOSE_SERVER__SECRET_KEY)"
+    "defaultMessage": "The secret key configured on the external backend (GOOSE_SERVER__SECRET_KEY)."
   },
   "externalBackendSection.secretKeyPlaceholder": {
     "defaultMessage": "Nhập khóa bí mật của máy chủ"
@@ -1206,10 +1206,10 @@
     "defaultMessage": "URL máy chủ"
   },
   "externalBackendSection.serverUrlHelp": {
-    "defaultMessage": "Enter the HTTP(S) base URL. Goose checks /status and connects to /acp under this base."
+    "defaultMessage": "Enter the HTTP(S) base URL. SHIP-OS Agent checks /status and connects to /acp under this base."
   },
   "externalBackendSection.title": {
-    "defaultMessage": "Máy chủ Goose"
+    "defaultMessage": "External Backend (ACP)"
   },
   "externalBackendSection.urlBaseError": {
     "defaultMessage": "URL must be the backend base URL before /acp, without query parameters or fragments"
@@ -1233,7 +1233,7 @@
     "defaultMessage": "Nhà phát triển"
   },
   "goosehintsModal.dialogDescription": {
-    "defaultMessage": "Cung cấp thêm ngữ cảnh về dự án của bạn để cải thiện giao tiếp với Goose"
+    "defaultMessage": "Provide additional context about your project to improve communication with Goose"
   },
   "goosehintsModal.dialogTitle": {
     "defaultMessage": "Cấu hình gợi ý dự án (.goosehints)"
@@ -1254,7 +1254,7 @@
     "defaultMessage": "Đã tìm thấy tệp .goosehints tại: {filePath}"
   },
   "goosehintsModal.helpText1": {
-    "defaultMessage": ".goosehints là một tệp văn bản dùng để cung cấp thêm ngữ cảnh về dự án của bạn và cải thiện giao tiếp với Goose."
+    "defaultMessage": ".goosehints is a text file used to provide additional context about your project and improve the communication with Goose."
   },
   "goosehintsModal.helpText2": {
     "defaultMessage": "Hãy đảm bảo tiện ích mở rộng {bold} được bật trong trang tiện ích mở rộng. Tiện ích mở rộng này là bắt buộc để sử dụng .goosehints. Bạn cần khởi động lại phiên để các cập nhật .goosehints có hiệu lực."
@@ -1281,7 +1281,7 @@
     "defaultMessage": "Cấu hình"
   },
   "goosehintsSection.description": {
-    "defaultMessage": "Cấu hình tệp .goosehints của dự án để cung cấp thêm ngữ cảnh cho Goose"
+    "defaultMessage": "Configure your project's .goosehints file to provide additional context to Goose"
   },
   "goosehintsSection.title": {
     "defaultMessage": "Gợi ý dự án (.goosehints)"
@@ -1566,13 +1566,13 @@
     "defaultMessage": "Phím tắt ứng dụng"
   },
   "keyboardShortcuts.categoryApplicationDescription": {
-    "defaultMessage": "Các phím tắt này hoạt động khi Goose là ứng dụng đang hoạt động"
+    "defaultMessage": "These shortcuts work when SHIP-OS Agent is the active application"
   },
   "keyboardShortcuts.categoryGlobal": {
     "defaultMessage": "Phím tắt toàn cục"
   },
   "keyboardShortcuts.categoryGlobalDescription": {
-    "defaultMessage": "Các phím tắt này hoạt động trên toàn hệ thống, ngay cả khi Goose không được lấy nét"
+    "defaultMessage": "These shortcuts work system-wide, even when SHIP-OS Agent is not focused"
   },
   "keyboardShortcuts.categorySearch": {
     "defaultMessage": "Phím tắt tìm kiếm"
@@ -1614,10 +1614,10 @@
     "defaultMessage": "Tìm trước đó"
   },
   "keyboardShortcuts.focusWindowDescription": {
-    "defaultMessage": "Đưa cửa sổ Goose lên phía trước từ bất kỳ đâu"
+    "defaultMessage": "Bring SHIP-OS Agent window to front from anywhere"
   },
   "keyboardShortcuts.focusWindowLabel": {
-    "defaultMessage": "Lấy nét cửa sổ Goose"
+    "defaultMessage": "Focus SHIP-OS Agent Window"
   },
   "keyboardShortcuts.loading": {
     "defaultMessage": "Đang tải..."
@@ -1629,7 +1629,7 @@
     "defaultMessage": "Trò chuyện mới"
   },
   "keyboardShortcuts.newChatWindowDescription": {
-    "defaultMessage": "Mở một cửa sổ Goose mới"
+    "defaultMessage": "Open a new SHIP-OS Agent window"
   },
   "keyboardShortcuts.newChatWindowLabel": {
     "defaultMessage": "Cửa sổ trò chuyện mới"
@@ -1668,7 +1668,7 @@
     "defaultMessage": "Đặt lại về mặc định"
   },
   "keyboardShortcuts.restartDescription": {
-    "defaultMessage": "Các thay đổi đối với phím tắt ứng dụng (như Trò chuyện mới, Cài đặt, v.v.) yêu cầu khởi động lại Goose để có hiệu lực. Phím tắt toàn cục (Lấy nét cửa sổ, Trình khởi chạy nhanh) hoạt động ngay lập tức."
+    "defaultMessage": "Changes to application shortcuts (like New Chat, Settings, etc.) require restarting SHIP-OS Agent to take effect. Global shortcuts (Focus Window, Quick Launcher) work immediately."
   },
   "keyboardShortcuts.restartRequired": {
     "defaultMessage": "Cần khởi động lại"
@@ -2397,7 +2397,7 @@
     "defaultMessage": "Máy chủ có thể đang khởi động hoặc tạm thời không khả dụng."
   },
   "onboardingGuard.checkProviderErrorTitle": {
-    "defaultMessage": "Không thể kết nối với máy chủ Goose"
+    "defaultMessage": "Unable to connect to SHIP-OS Agent server"
   },
   "onboardingGuard.retry": {
     "defaultMessage": "Thử lại"
@@ -3789,7 +3789,7 @@
     "defaultMessage": "Lịch sử trò chuyện"
   },
   "sessions.chatHistoryDesc": {
-    "defaultMessage": "Xem và tìm kiếm các cuộc trò chuyện trước đây của bạn với Goose. {shortcut} để tìm kiếm."
+    "defaultMessage": "View and search your past conversations with SHIP-OS Agent. {shortcut} to search."
   },
   "sessions.close": {
     "defaultMessage": "Đóng"
@@ -3825,7 +3825,7 @@
     "defaultMessage": "Nhập liên kết"
   },
   "sessions.importNostr.description": {
-    "defaultMessage": "Dán một liên kết chia sẻ Nostr của Goose để tìm nạp, giải mã và nhập phiên."
+    "defaultMessage": "Paste a SHIP-OS Agent Nostr share link to fetch, decrypt, and import the session."
   },
   "sessions.importNostr.placeholder": {
     "defaultMessage": "goose://sessions/nostr?nevent=...&key=..."
@@ -4038,7 +4038,7 @@
     "defaultMessage": "Mở Settings"
   },
   "settings.notifications.task.description": {
-    "defaultMessage": "Thông báo khi Goose hoàn thành một tác vụ trong khi cửa sổ đang ở chế độ nền"
+    "defaultMessage": "Notify when SHIP-OS Agent finishes a task while the window is in the background"
   },
   "settings.notifications.task.title": {
     "defaultMessage": "Thông báo hoàn thành tác vụ"
@@ -4134,7 +4134,7 @@
     "defaultMessage": "Tìm kiếm kỹ năng..."
   },
   "skillsView.skillsDescription": {
-    "defaultMessage": "Xem các kỹ năng đã cài đặt giúp mở rộng khả năng của Goose. {shortcut} để tìm kiếm."
+    "defaultMessage": "View installed skills that extend SHIP-OS Agent capabilities. {shortcut} to search."
   },
   "skillsView.skillsTitle": {
     "defaultMessage": "Kỹ năng"
@@ -4485,10 +4485,10 @@
     "defaultMessage": "Cho phép {toolName}?"
   },
   "toolConfirmation.gooseWouldLikeToCallWithName": {
-    "defaultMessage": "Goose muốn gọi {toolName}. Cho phép?"
+    "defaultMessage": "SHIP-OS Agent would like to call {toolName}. Allow?"
   },
   "updateSection.autoDownload": {
-    "defaultMessage": "Goose sẽ tải bản cập nhật ở chế độ nền và cài đặt vào lần tiếp theo khi bạn thoát hoặc khởi động lại."
+    "defaultMessage": "Goose will download the update in the background and install it the next time you quit or restart."
   },
   "updateSection.autoDownloadDisabledByEnv": {
     "defaultMessage": "Tải xuống tự động đã bị tắt thông qua biến môi trường GOOSE_DISABLE_AUTO_DOWNLOAD."
@@ -4512,7 +4512,7 @@
     "defaultMessage": "Tắt tải xuống cập nhật tự động"
   },
   "updateSection.disableAutoDownloadDesc": {
-    "defaultMessage": "Khi được bật, Goose sẽ thông báo cho bạn về các phiên bản mới nhưng sẽ không tự động tải xuống."
+    "defaultMessage": "When enabled, Goose will notify you of new versions but will not download them automatically."
   },
   "updateSection.downloadNow": {
     "defaultMessage": "Tải ngay"
@@ -4545,7 +4545,7 @@
     "defaultMessage": "Cần cài đặt thủ công cho phương thức cập nhật này."
   },
   "updateSection.readyInstallAuto": {
-    "defaultMessage": "✓ Bản cập nhật đã sẵn sàng. Khởi động lại Goose để hoàn tất cài đặt, hoặc thoát khi bạn đã xong."
+    "defaultMessage": "✓ Update is ready. Restart Goose to finish installing it, or quit when you're done."
   },
   "updateSection.readyInstallManual": {
     "defaultMessage": "✓ Bản cập nhật đã sẵn sàng! Nhấp vào \"Cài đặt & khởi động lại\" để xem hướng dẫn cài đặt."
