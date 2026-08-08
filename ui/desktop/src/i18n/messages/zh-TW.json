@@ -4612,5 +4612,47 @@
   },
   "userMessage.removeImageFromEdit": {
     "defaultMessage": "從訊息中移除圖片"
+  },
+  "navigation.itemShipos": {
+    "defaultMessage": "SHIP-OS"
+  },
+  "shipos.back": {
+    "defaultMessage": "Back to chat"
+  },
+  "shipos.baseUrl": {
+    "defaultMessage": "Backend: {baseUrl}"
+  },
+  "shipos.byokNote": {
+    "defaultMessage": "LLM provider keys are yours (BYOK) — set them in Settings → Providers."
+  },
+  "shipos.checkEmail": {
+    "defaultMessage": "Check your inbox — click the SHIP-OS sign-in link to continue."
+  },
+  "shipos.emailLabel": {
+    "defaultMessage": "SHIP-OS email"
+  },
+  "shipos.emailPlaceholder": {
+    "defaultMessage": "you@example.com"
+  },
+  "shipos.sendLink": {
+    "defaultMessage": "Send sign-in link"
+  },
+  "shipos.signInError": {
+    "defaultMessage": "Sign-in failed: {message}"
+  },
+  "shipos.signOut": {
+    "defaultMessage": "Sign out"
+  },
+  "shipos.signedInAs": {
+    "defaultMessage": "Signed in as {email}"
+  },
+  "shipos.subtitle": {
+    "defaultMessage": "Connect SHIP-OS to the agent. The session is stored in your keychain."
+  },
+  "shipos.title": {
+    "defaultMessage": "SHIP-OS"
+  },
+  "shipos.waiting": {
+    "defaultMessage": "Waiting for you to click the link…"
   }
 }

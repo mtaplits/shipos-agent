@@ -8,6 +8,7 @@ import { useNavigationSessions } from '../../hooks/useNavigationSessions';
 import {
   NAV_ITEMS,
   SETTINGS_NAV_ITEM,
+  SHIPOS_NAV_ITEM,
   getNavItemLabel,
   type NavItem,
 } from '../../hooks/useNavigationItems';
@@ -400,6 +401,11 @@ export const Navigation: React.FC<{ className?: string }> = ({ className }) => {
       </div>
 
       <div className="px-2 pt-2 pb-2 border-t border-border-secondary">
+        <NavRow
+          item={SHIPOS_NAV_ITEM}
+          active={isActive(SHIPOS_NAV_ITEM.path)}
+          onClick={() => handleNavClick(SHIPOS_NAV_ITEM.path)}
+        />
         <NavRow
           item={SETTINGS_NAV_ITEM}
           active={isActive(SETTINGS_NAV_ITEM.path)}

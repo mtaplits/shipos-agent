@@ -185,6 +185,15 @@ type AppConfigAPI = {
   getAll: () => Record<string, unknown>;
 };
 
+type ShiposAuthState = { signedIn: boolean; email?: string; baseUrl?: string };
+
+type ShiposAuthAPI = {
+  state: () => Promise<ShiposAuthState>;
+  requestLink: (email: string) => Promise<void>;
+  poll: () => Promise<ShiposAuthState>;
+  signOut: () => Promise<ShiposAuthState>;
+};
+
 const electronAPI: ElectronAPI = {
   platform: process.platform,
   arch: process.arch,
@@ -350,14 +359,23 @@ const appConfigAPI: AppConfigAPI = {
   getAll: () => ({ ...config, GOOSE_LOCALE: getAppLocale() }),
 };
 
+const shiposAuthAPI: ShiposAuthAPI = {
+  state: () => ipcRenderer.invoke('shipos-auth:state'),
+  requestLink: (email: string) => ipcRenderer.invoke('shipos-auth:request-link', email),
+  poll: () => ipcRenderer.invoke('shipos-auth:poll'),
+  signOut: () => ipcRenderer.invoke('shipos-auth:sign-out'),
+};
+
 // Expose the APIs
 contextBridge.exposeInMainWorld('electron', electronAPI);
 contextBridge.exposeInMainWorld('appConfig', appConfigAPI);
+contextBridge.exposeInMainWorld('shiposAuth', shiposAuthAPI);
 
 // Type declaration for TypeScript
 declare global {
   interface Window {
     electron: ElectronAPI;
     appConfig: AppConfigAPI;
+    shiposAuth: ShiposAuthAPI;
   }
 }

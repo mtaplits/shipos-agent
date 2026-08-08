@@ -30,6 +30,12 @@ import { checkBackendStatus } from './backendStatus';
 import { startGooseServe } from './gooseServe';
 import { getLoginShellPath } from './loginShellPath';
 import { GooseServeLeaseRegistry, type GooseServeLease } from './gooseServeLeaseRegistry';
+import {
+  currentSessionState,
+  shiposRequestLink,
+  shiposPoll,
+  shiposSignOut,
+} from './shiposAuth';
 import { acpWebSocketUrlFromHttpBase, normalizeAcpHttpBaseUrl } from './acp/url';
 import { expandTilde, sanitizeGoosePathRoot } from './utils/pathUtils';
 import log from './utils/logger';
@@ -1986,6 +1992,17 @@ ipcMain.handle('get-secret-key', (event) => {
   }
   return gooseServeLeases.getSecretKey(windowId) ?? null;
 });
+
+// SHIP-OS authentication (desktop-link flow + safeStorage + goose MCP config)
+ipcMain.handle('shipos-auth:state', () => currentSessionState());
+ipcMain.handle('shipos-auth:request-link', async (_event, email: string) => {
+  if (typeof email !== 'string' || !email.trim()) {
+    throw new Error('A valid email address is required.');
+  }
+  await shiposRequestLink(email);
+});
+ipcMain.handle('shipos-auth:poll', () => shiposPoll());
+ipcMain.handle('shipos-auth:sign-out', () => shiposSignOut());
 
 ipcMain.handle('get-acp-url', async (event) => {
   const windowId = BrowserWindow.fromWebContents(event.sender)?.id;

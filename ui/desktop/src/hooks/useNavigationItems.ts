@@ -6,6 +6,7 @@ import {
   MessageSquarePlus,
   Puzzle,
   Settings,
+  Ship,
   Zap,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
@@ -30,6 +31,14 @@ export const NAV_ITEMS: NavItem[] = [
   { id: 'extensions', path: '/extensions', label: 'Extensions', icon: Puzzle },
   { id: 'sessions', path: '/sessions', label: 'Session History', icon: History },
 ];
+
+/** SHIP-OS (agent auth/status) — rendered in the sidebar footer above Settings. */
+export const SHIPOS_NAV_ITEM: NavItem = {
+  id: 'shipos',
+  path: '/shipos',
+  label: 'SHIP-OS',
+  icon: Ship,
+};
 
 /** Settings is rendered separately, pinned to the bottom of the sidebar. */
 export const SETTINGS_NAV_ITEM: NavItem = {
@@ -73,6 +82,10 @@ const navItemMessages = defineMessages({
   settings: {
     id: 'navigation.itemSettings',
     defaultMessage: 'Settings',
+  },
+  shipos: {
+    id: 'navigation.itemShipos',
+    defaultMessage: 'SHIP-OS',
   },
 });
 
