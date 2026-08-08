@@ -86,8 +86,10 @@ No SHIP-OS backend changes are required in M1.
 - GIVEN a signed-in session WHEN the user sends "find order 1041" THEN the agent emits a tool
   call to `shipos.search_orders` and the thread shows a tool-call card in running state.
 - GIVEN results from `shipos.search_orders` WHEN the agent calls `shipos.get_order` THEN the
-  thread renders an order detail card showing order number, status, ship-to, and totals taken
-  from the API response.
+  thread renders an order detail card showing order number, status, ship-to, and item summary
+  (item count / unit count / item lines) taken from the API response. Monetary totals are
+  deferred to M2: the existing JSON API exposes no order totals, and M1 keeps zero SHIP-OS
+  backend changes; totals arrive with the first financial gap endpoint in M2.
 - GIVEN a query with no match WHEN the agent finishes THEN the reply states no order was found
   (no error crash, no empty card).
 - GIVEN the MCP server WHEN `shipos.search_orders` or `shipos.get_order` is invoked THEN it
@@ -141,7 +143,7 @@ This feature does NOT:
 | Risk / Assumption | Impact | Mitigation |
 |---|---|---|
 | Assumption: the goose agent can run as a local dependency over ACP on macOS in v2's Electron app. | ACP protocol changes or binary incompatibility could block M1. | Pin the goose version; use the goose CLI subprocess as a fallback transport behind the same ACP client interface. |
-| Assumption: `/api/v1/mobile/orders*` supports the search semantics "find order 1041". | Search may need a query/filter the feed lacks; M1 could stall. | Endpoint discovery task first (confirm filter/search params); fallback is one small read-only search endpoint added on the SHIP-OS side under the normal gates. |
+| ~~Assumption: `/api/v1/mobile/orders*` supports the search semantics "find order 1041".~~ **Resolved 2026-08-08:** `GET /api/v1/mobile/orders?q=…` matches order numbers via the `OrderSearchDocument` search projection (ILIKE); feed rows include order identity, status summary, destination, item summary, and `shipment_id` (which unlocks the existing shipment snapshot for line-level detail). | — | No backend work needed for search or detail. The only gap is monetary totals (not exposed by any JSON endpoint) — deferred to M2. |
 | Assumption: the mobile auth flow (request-link → poll → exchange) works for a non-WebView native client. | The flow may assume browser/WebView user-agent behavior. | Verify in discovery against the native mobile clients that already use it; adjust v2 client to the same JSON-native contract. |
 | Risk: Cash Sans is Square's font; pixel parity depends on loading it from the Square CDN. | Font availability/CDN changes could shift rendering. | Use the same `@font-face` CDN rules as goose (`cash-f.squarecdn.com`); document a fallback font stack in the theme. |
 | Assumption: users bring their own LLM API keys (BYOK) in M1. | Key-management support burden on operators. | Settings UI + docs; provider-agnostic via the goose agent; keys live in the OS keychain, never in the repo. |
