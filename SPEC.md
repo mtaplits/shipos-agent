@@ -148,7 +148,7 @@ This feature does NOT:
 | Risk: Cash Sans is Square's font; pixel parity depends on loading it from the Square CDN. | Font availability/CDN changes could shift rendering. | Use the same `@font-face` CDN rules as goose (`cash-f.squarecdn.com`); document a fallback font stack in the theme. |
 | Assumption: users bring their own LLM API keys (BYOK) in M1. | Key-management support burden on operators. | Settings UI + docs; provider-agnostic via the goose agent; keys live in the OS keychain, never in the repo. |
 | Risk: visual-diff acceptance (<1% pixel difference) is hard to hit exactly for every component. | Parity gate could become a slog. | Capture reference screenshots from the real goose desktop app; diff per screen; triage remaining diffs as token/component fixes before layout changes. |
-| External dependency: goose repo (MIT) API churn. | v2's ACP layer could break on upgrades. | Pin versions in the repo manifest; upgrade deliberately with the v2 test suite as the gate. |
+| External dependency: goose repo (Apache-2.0) API churn. | v2's ACP layer could break on upgrades. | Pin versions in the repo manifest; upgrade deliberately with the v2 test suite as the gate. |
 
 ## 5. Estimation
 

@@ -1,0 +1,14 @@
+shipos-agent includes substantial portions derived from Goose
+(https://github.com/aaif-goose/goose), Copyright (c) AAIF (Agentic AI Foundation)
+and contributors, licensed under the Apache License, Version 2.0.
+
+The desktop application under ui/desktop/ is adapted from Goose's ui/desktop
+package (Electron + Vite + React + Tailwind v4 + shadcn structure, theme tokens,
+ACP client, and components) to preserve goose's design and architecture
+pixel-for-pixel and structure-for-structure.
+
+The theme token tables in ui/desktop/src/theme/theme-tokens.ts, the Tailwind
+primitives in ui/desktop/src/styles/main.css, and the Cash Sans @font-face rules
+are copied verbatim from Goose to guarantee pixel parity.
+
+See LICENSE for the full Apache License 2.0 text.
