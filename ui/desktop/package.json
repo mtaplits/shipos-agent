@@ -47,7 +47,7 @@
     "i18n:validate-locale": "node scripts/i18n-validate-locale.js"
   },
   "dependencies": {
-    "@aaif/goose-sdk": "^0.20.2",
+    "@aaif/goose-sdk": "workspace:*",
     "@agentclientprotocol/sdk": "^0.19.0",
     "@mcp-ui/client": "6.1.0",
     "@modelcontextprotocol/ext-apps": "^1.1.1",

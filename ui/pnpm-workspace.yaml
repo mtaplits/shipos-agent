@@ -1,0 +1,17 @@
+packages:
+  - 'sdk'
+  - 'desktop'
+
+registry: https://registry.npmjs.org/
+preferOffline: true
+nodeLinker: hoisted
+overrides:
+  react: ^19.2.8
+  react-dom: ^19.2.8
+allowBuilds:
+  '@modelcontextprotocol/ext-apps': true
+  electron: true
+  electron-winstaller: true
+  esbuild: true
+# Electron Forge resolves @electron/node-gyp from git.
+blockExoticSubdeps: false
