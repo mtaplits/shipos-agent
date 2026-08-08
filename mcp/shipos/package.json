@@ -1,0 +1,30 @@
+{
+  "name": "@shipos/mcp-server",
+  "version": "0.1.0",
+  "description": "SHIP-OS MCP server: exposes SHIP-OS as MCP tools over the existing JSON API (/api/v1/mobile/*) with desktop-link session auth.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "shipos-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "login": "tsx scripts/login.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.10"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
