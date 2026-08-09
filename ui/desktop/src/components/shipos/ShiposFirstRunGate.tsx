@@ -68,7 +68,14 @@ export default function ShiposFirstRunGate({ children }: { children: React.React
     const poll = async () => {
       try {
         const state = await window.shiposAuth.poll();
-        if (active && state.signedIn) setSignedIn(true);
+        if (active && state.signedIn) {
+          // Login completion writes the isolated Goose profile and SHIP-OS MCP
+          // configuration after the current runtime has already started. Keep
+          // the gate closed and reload so the next runtime starts from the
+          // completed profile before provider onboarding opens an ACP session.
+          setPhase('checking');
+          window.electron.reloadApp();
+        }
       } catch (err) {
         if (!active) return;
         setError(err instanceof Error ? err.message : String(err));

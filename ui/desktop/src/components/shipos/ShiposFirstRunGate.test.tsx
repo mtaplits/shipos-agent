@@ -8,6 +8,7 @@ import ShiposFirstRunGate from './ShiposFirstRunGate';
 const state = vi.fn();
 const requestLink = vi.fn();
 const poll = vi.fn();
+const reloadApp = vi.fn();
 
 beforeEach(() => {
   vi.clearAllMocks();
@@ -15,6 +16,7 @@ beforeEach(() => {
     configurable: true,
     value: { state, requestLink, poll, signOut: vi.fn() },
   });
+  window.electron.reloadApp = reloadApp;
 });
 
 function renderGate() {
@@ -38,6 +40,18 @@ describe('ShiposFirstRunGate', () => {
     renderGate();
     expect(await screen.findByText('private chat shell')).toBeInTheDocument();
     expect(screen.queryByRole('heading', { name: 'Sign in to SHIP-OS' })).not.toBeInTheDocument();
+  });
+
+  it('reloads after login completes so Goose starts from the completed isolated profile', async () => {
+    state.mockResolvedValue({ signedIn: false });
+    requestLink.mockResolvedValue(undefined);
+    poll.mockResolvedValue({ signedIn: true, email: 'operator@example.com' });
+    const user = userEvent.setup();
+    renderGate();
+    await user.type(await screen.findByLabelText('SHIP-OS email'), 'operator@example.com');
+    await user.click(screen.getByRole('button', { name: 'Send sign-in link' }));
+    await waitFor(() => expect(reloadApp).toHaveBeenCalledTimes(1));
+    expect(screen.queryByText('private chat shell')).not.toBeInTheDocument();
   });
 
   it('requests a desktop link and keeps the chat shell blocked while waiting', async () => {
