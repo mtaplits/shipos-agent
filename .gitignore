@@ -5,3 +5,13 @@ out/
 *.log
 .env
 .DS_Store
+
+# Credentials and generated/private runtime state
+*.pem
+*.key
+*.p12
+*.session
+shipos-session.json
+coverage/
+playwright-report/
+test-results/

@@ -164,3 +164,26 @@ This feature does NOT:
 - [ ] Out of scope has ≥ 3 items (6 present)
 - [ ] All acceptance criteria verifiable (no subjective language)
 - [ ] No SHIP-OS repository changes required by M1 acceptance criteria
+
+## 6. Implementation Ledger (2026-08-08)
+
+| Capability | Implementation | Verification | Status |
+|---|---|---|---|
+| Goose-derived desktop scaffold | `ui/desktop`, vendored `ui/sdk` | TypeScript clean; Electron Forge package succeeds | Complete |
+| Real Goose runtime over ACP | Existing Goose `goose serve` integration; official 1.45.0 binary used for launch proof | React-ready runtime log and compositor capture | Complete |
+| SHIP-OS order tools | `mcp/shipos`: `shipos_search_orders`, `shipos_get_order` | 14/14 MCP tests; stdio `tools/list` smoke | Complete |
+| Desktop-link authentication | `ui/desktop/src/shiposAuth.ts`, `ShiposView.tsx` | HTML/YAML tests; Keychain path via Electron `safeStorage`; 611/611 desktop tests | Complete, live user sign-in deferred |
+| Local sessions and Goose shell | Goose session/ACP implementation retained | Upstream desktop suite | Complete |
+| Light/dark Goose tokens | Verbatim `theme-tokens.ts` + `main.css` | Theme tests and pixel baseline | Complete |
+| Tool approval experience | Goose permission/tool confirmation components retained | Existing component tests | Complete; M1 mutation remains stub/read-only |
+| BYOK provider configuration | Goose Settings → Providers retained | User-driven live setup deferred | Complete in UI |
+| Pixel-parity baseline | `artifacts/pixel-parity/` + `scripts/pixel-diff.py` | 1.787267% changed pixels (intentional identity/nav delta included) | Baseline recorded |
+| Continuous integration | `.github/workflows/ci.yml` | Desktop and MCP gates defined | Complete; remote run occurs on push |
+
+### Remaining user-driven M1 evidence
+
+1. Sign in through the SHIP-OS screen by clicking the emailed desktop link.
+2. Enter a personal provider key in Settings → Providers (BYOK).
+3. Ask for a real order and confirm the agent invokes both SHIP-OS MCP tools.
+
+These require user credentials and production data and are intentionally not automated or stored in the repository.

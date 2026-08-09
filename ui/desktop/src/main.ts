@@ -1456,6 +1456,8 @@ const createChat = async (
   // Set SHIPOS_CAPTURE_PATH to write a PNG of the window after it settles.
   if (process.env.SHIPOS_CAPTURE_PATH) {
     const capturePath = process.env.SHIPOS_CAPTURE_PATH;
+    mainWindow.setContentSize(940, 800);
+    mainWindow.center();
     mainWindow.webContents.once('did-finish-load', () => {
       setTimeout(async () => {
         try {

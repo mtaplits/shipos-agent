@@ -1,0 +1,10 @@
+{
+  "reference": "artifacts/pixel-parity/goose-reference.normalized.png",
+  "candidate": "artifacts/pixel-parity/shipos-agent.png",
+  "width": 1880,
+  "height": 1600,
+  "total_pixels": 3008000,
+  "changed_pixels": 53761,
+  "changed_percent": 1.787267,
+  "diff": "artifacts/pixel-parity/diff.png"
+}
