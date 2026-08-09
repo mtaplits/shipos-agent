@@ -1452,6 +1452,23 @@ const createChat = async (
   });
   mainWindow.loadURL(formattedUrl);
 
+  // Dev-only capture hook (used by screenshot/pixel-parity tooling).
+  // Set SHIPOS_CAPTURE_PATH to write a PNG of the window after it settles.
+  if (process.env.SHIPOS_CAPTURE_PATH) {
+    const capturePath = process.env.SHIPOS_CAPTURE_PATH;
+    mainWindow.webContents.once('did-finish-load', () => {
+      setTimeout(async () => {
+        try {
+          const image = await mainWindow.webContents.capturePage();
+          fsSync.writeFileSync(capturePath, image.toPNG());
+          log.info(`[capture] wrote ${capturePath}`);
+        } catch (err) {
+          log.error('[capture] failed', err);
+        }
+      }, 15_000);
+    });
+  }
+
   // If we have an initial message, store it to send after React is ready
   if (initialMessage) {
     pendingInitialMessages.set(mainWindow.id, initialMessage);
