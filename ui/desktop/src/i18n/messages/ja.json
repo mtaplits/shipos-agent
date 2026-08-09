@@ -2333,29 +2333,14 @@
   "modelsSection.resetTitle": {
     "defaultMessage": "プロバイダーとモデルをリセット"
   },
-  "navigation.itemApps": {
-    "defaultMessage": "アプリ"
-  },
-  "navigation.itemExtensions": {
-    "defaultMessage": "拡張機能"
-  },
   "navigation.itemHome": {
     "defaultMessage": "新規チャット"
-  },
-  "navigation.itemRecipes": {
-    "defaultMessage": "レシピ"
-  },
-  "navigation.itemScheduler": {
-    "defaultMessage": "スケジューラー"
   },
   "navigation.itemSessions": {
     "defaultMessage": "セッション履歴"
   },
   "navigation.itemSettings": {
     "defaultMessage": "設定"
-  },
-  "navigation.itemSkills": {
-    "defaultMessage": "スキル"
   },
   "navigationPanel.chats": {
     "defaultMessage": "チャット"
@@ -2403,10 +2388,10 @@
     "defaultMessage": "再試行"
   },
   "onboardingGuard.welcomeDescription": {
-    "defaultMessage": "ローカルAIエージェントです。始めるにはAIモデルプロバイダーに接続してください。"
+    "defaultMessage": "Connect your own AI provider to power private SHIP-OS conversations and tools."
   },
   "onboardingGuard.welcomeTitle": {
-    "defaultMessage": "gooseへようこそ"
+    "defaultMessage": "Set up SHIP-OS Agent"
   },
   "onboardingSuccess.allSet": {
     "defaultMessage": "gooseを使い始める準備ができました。"
@@ -2859,19 +2844,13 @@
     "defaultMessage": "カスタムプロバイダーを追加"
   },
   "providerSelector.connectProvider": {
-    "defaultMessage": "プロバイダーに接続"
+    "defaultMessage": "Choose your AI provider"
   },
   "providerSelector.connectProviderDescription": {
-    "defaultMessage": "OpenAI、Anthropic、Googleなどに接続"
-  },
-  "providerSelector.localModelDescription": {
-    "defaultMessage": "モデルをダウンロードして、すべて自分のマシン上で実行します。APIキーもアカウントも不要です。"
+    "defaultMessage": "Use your own provider account and API key. Keys stay in SHIP-OS Agent’s private profile."
   },
   "providerSelector.selectProvider": {
     "defaultMessage": "プロバイダーを選択"
-  },
-  "providerSelector.useLocalModel": {
-    "defaultMessage": "ローカルモデルを使用"
   },
   "providerSettings.configurationSettings": {
     "defaultMessage": "プロバイダー設定"
@@ -3900,7 +3879,7 @@
     "defaultMessage": "セッションの説明を更新しました"
   },
   "settings.appearance.description": {
-    "defaultMessage": "システム上でのgooseの表示を設定します"
+    "defaultMessage": "Configure how SHIP-OS Agent appears on your system"
   },
   "settings.appearance.title": {
     "defaultMessage": "外観"
@@ -3915,13 +3894,13 @@
     "defaultMessage": "コスト管理"
   },
   "settings.dockIcon.description": {
-    "defaultMessage": "Dockにgooseを表示します"
+    "defaultMessage": "Show SHIP-OS Agent in the dock"
   },
   "settings.dockIcon.title": {
     "defaultMessage": "Dockアイコン"
   },
   "settings.help.description": {
-    "defaultMessage": "問題の報告や新機能のリクエストでgooseの改善にご協力ください"
+    "defaultMessage": "Report issues or request SHIP-OS Agent features"
   },
   "settings.help.reportBug": {
     "defaultMessage": "バグを報告"
@@ -3933,7 +3912,7 @@
     "defaultMessage": "ヘルプとフィードバック"
   },
   "settings.language.description": {
-    "defaultMessage": "goose の表示言語を選択"
+    "defaultMessage": "Choose the display language for SHIP-OS Agent"
   },
   "settings.language.english": {
     "defaultMessage": "英語"
@@ -3990,7 +3969,7 @@
     "defaultMessage": "中国語（繁体字）"
   },
   "settings.menuBarIcon.description": {
-    "defaultMessage": "メニューバーにgooseを表示します"
+    "defaultMessage": "Show SHIP-OS Agent in the menu bar"
   },
   "settings.menuBarIcon.title": {
     "defaultMessage": "メニューバーアイコン"
@@ -4011,7 +3990,7 @@
     "defaultMessage": "「通知」をクリック"
   },
   "settings.notifications.modal.macStep3": {
-    "defaultMessage": "アプリ一覧でgooseを見つけて選択"
+    "defaultMessage": "Find and select SHIP-OS Agent in the application list"
   },
   "settings.notifications.modal.macStep4": {
     "defaultMessage": "通知を有効にし、必要に応じて設定を調整"
@@ -4029,7 +4008,7 @@
     "defaultMessage": "システム > 通知に移動"
   },
   "settings.notifications.modal.winStep3": {
-    "defaultMessage": "アプリ一覧でgooseを見つけて選択"
+    "defaultMessage": "Find and select SHIP-OS Agent in the application list"
   },
   "settings.notifications.modal.winStep4": {
     "defaultMessage": "通知をオンにし、必要に応じて設定を調整"
@@ -4047,19 +4026,19 @@
     "defaultMessage": "通知"
   },
   "settings.preventSleep.description": {
-    "defaultMessage": "gooseがタスクを実行中はコンピューターがスリープしないようにします（画面はロックされる場合があります）"
+    "defaultMessage": "Keep your computer awake while SHIP-OS Agent is running a task (screen can still lock)"
   },
   "settings.preventSleep.title": {
     "defaultMessage": "スリープを防止"
   },
   "settings.theme.description": {
-    "defaultMessage": "gooseの見た目と操作感をカスタマイズします"
+    "defaultMessage": "Customize the look and feel of SHIP-OS Agent"
   },
   "settings.theme.title": {
     "defaultMessage": "テーマ"
   },
   "settings.updates.description": {
-    "defaultMessage": "gooseを最新の状態に保つため、アップデートを確認してインストールします"
+    "defaultMessage": "Check for and install SHIP-OS Agent updates"
   },
   "settings.updates.title": {
     "defaultMessage": "アップデート"
@@ -4070,26 +4049,14 @@
   "settingsView.tabApp": {
     "defaultMessage": "アプリ"
   },
-  "settingsView.tabAuth": {
-    "defaultMessage": "認証"
-  },
   "settingsView.tabChat": {
     "defaultMessage": "チャット"
-  },
-  "settingsView.tabExternalBackend": {
-    "defaultMessage": "外部バックエンド"
   },
   "settingsView.tabKeyboard": {
     "defaultMessage": "キーボード"
   },
-  "settingsView.tabLocalInference": {
-    "defaultMessage": "ローカル推論"
-  },
   "settingsView.tabModels": {
-    "defaultMessage": "モデル"
-  },
-  "settingsView.tabPrompts": {
-    "defaultMessage": "プロンプト"
+    "defaultMessage": "Providers"
   },
   "settingsView.title": {
     "defaultMessage": "設定"

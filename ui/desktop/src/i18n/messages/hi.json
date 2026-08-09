@@ -2333,29 +2333,14 @@
   "modelsSection.resetTitle": {
     "defaultMessage": "प्रदाता और मॉडल रीसेट करें"
   },
-  "navigation.itemApps": {
-    "defaultMessage": "ऐप्स"
-  },
-  "navigation.itemExtensions": {
-    "defaultMessage": "एक्सटेंशन"
-  },
   "navigation.itemHome": {
     "defaultMessage": "नई चैट"
-  },
-  "navigation.itemRecipes": {
-    "defaultMessage": "व्यंजन विधि"
-  },
-  "navigation.itemScheduler": {
-    "defaultMessage": "अनुसूचक"
   },
   "navigation.itemSessions": {
     "defaultMessage": "सत्र इतिहास"
   },
   "navigation.itemSettings": {
     "defaultMessage": "Settings"
-  },
-  "navigation.itemSkills": {
-    "defaultMessage": "कौशल"
   },
   "navigationPanel.chats": {
     "defaultMessage": "चैट"
@@ -2403,10 +2388,10 @@
     "defaultMessage": "पुनः प्रयास करें"
   },
   "onboardingGuard.welcomeDescription": {
-    "defaultMessage": "आपका स्थानीय एआई एजेंट। आरंभ करने के लिए किसी AI मॉडल प्रदाता से कनेक्ट करें।"
+    "defaultMessage": "Connect your own AI provider to power private SHIP-OS conversations and tools."
   },
   "onboardingGuard.welcomeTitle": {
-    "defaultMessage": "goose में आपका स्वागत है"
+    "defaultMessage": "Set up SHIP-OS Agent"
   },
   "onboardingSuccess.allSet": {
     "defaultMessage": "आप goose का उपयोग शुरू करने के लिए पूरी तरह तैयार हैं।"
@@ -2859,19 +2844,13 @@
     "defaultMessage": "कस्टम प्रदाता जोड़ें"
   },
   "providerSelector.connectProvider": {
-    "defaultMessage": "किसी प्रदाता से कनेक्ट करें"
+    "defaultMessage": "Choose your AI provider"
   },
   "providerSelector.connectProviderDescription": {
-    "defaultMessage": "OpenAI, Anthropic, Google, आदि से कनेक्ट करें"
-  },
-  "providerSelector.localModelDescription": {
-    "defaultMessage": "एक मॉडल डाउनलोड करें और पूरी तरह से अपनी मशीन पर चलाएं। कोई API कुंजी नहीं, कोई खाता नहीं।"
+    "defaultMessage": "Use your own provider account and API key. Keys stay in SHIP-OS Agent’s private profile."
   },
   "providerSelector.selectProvider": {
     "defaultMessage": "एक प्रदाता चुनें"
-  },
-  "providerSelector.useLocalModel": {
-    "defaultMessage": "स्थानीय मॉडल का प्रयोग करें"
   },
   "providerSettings.configurationSettings": {
     "defaultMessage": "प्रदाता कॉन्फ़िगरेशन Settings"
@@ -3900,7 +3879,7 @@
     "defaultMessage": "सत्र विवरण सफलतापूर्वक अपडेट किया गया"
   },
   "settings.appearance.description": {
-    "defaultMessage": "कॉन्फ़िगर करें कि goose आपके सिस्टम पर कैसे दिखाई देता है"
+    "defaultMessage": "Configure how SHIP-OS Agent appears on your system"
   },
   "settings.appearance.title": {
     "defaultMessage": "दिखावट"
@@ -3915,13 +3894,13 @@
     "defaultMessage": "लागत ट्रैकिंग"
   },
   "settings.dockIcon.description": {
-    "defaultMessage": "गोदी में goose दिखाएँ"
+    "defaultMessage": "Show SHIP-OS Agent in the dock"
   },
   "settings.dockIcon.title": {
     "defaultMessage": "डॉक आइकन"
   },
   "settings.help.description": {
-    "defaultMessage": "समस्याओं की रिपोर्ट करके या नई सुविधाओं का अनुरोध करके goose को बेहतर बनाने में हमारी सहायता करें"
+    "defaultMessage": "Report issues or request SHIP-OS Agent features"
   },
   "settings.help.reportBug": {
     "defaultMessage": "बग की रिपोर्ट करें"
@@ -3933,7 +3912,7 @@
     "defaultMessage": "सहायता एवं प्रतिक्रिया"
   },
   "settings.language.description": {
-    "defaultMessage": "goose के लिए प्रदर्शन भाषा चुनें"
+    "defaultMessage": "Choose the display language for SHIP-OS Agent"
   },
   "settings.language.english": {
     "defaultMessage": "अंग्रेज़ी"
@@ -3990,7 +3969,7 @@
     "defaultMessage": "चीनी (पारंपरिक)"
   },
   "settings.menuBarIcon.description": {
-    "defaultMessage": "मेनू बार में goose दिखाएँ"
+    "defaultMessage": "Show SHIP-OS Agent in the menu bar"
   },
   "settings.menuBarIcon.title": {
     "defaultMessage": "मेनू बार आइकन"
@@ -4011,7 +3990,7 @@
     "defaultMessage": "नोटिफिकेशन पर क्लिक करें"
   },
   "settings.notifications.modal.macStep3": {
-    "defaultMessage": "एप्लिकेशन सूची में goose ढूंढें और चुनें"
+    "defaultMessage": "Find and select SHIP-OS Agent in the application list"
   },
   "settings.notifications.modal.macStep4": {
     "defaultMessage": "सूचनाएं सक्षम करें और सेटिंग्स को इच्छानुसार समायोजित करें"
@@ -4029,7 +4008,7 @@
     "defaultMessage": "सिस्टम > सूचनाएँ पर जाएँ"
   },
   "settings.notifications.modal.winStep3": {
-    "defaultMessage": "एप्लिकेशन सूची में goose ढूंढें और चुनें"
+    "defaultMessage": "Find and select SHIP-OS Agent in the application list"
   },
   "settings.notifications.modal.winStep4": {
     "defaultMessage": "सूचनाओं को चालू करें और सेटिंग्स को इच्छानुसार समायोजित करें"
@@ -4047,19 +4026,19 @@
     "defaultMessage": "सूचनाएं"
   },
   "settings.preventSleep.description": {
-    "defaultMessage": "जब goose कोई कार्य चला रहा हो तो अपने कंप्यूटर को चालू रखें (स्क्रीन अभी भी लॉक हो सकती है)"
+    "defaultMessage": "Keep your computer awake while SHIP-OS Agent is running a task (screen can still lock)"
   },
   "settings.preventSleep.title": {
     "defaultMessage": "नींद रोकें"
   },
   "settings.theme.description": {
-    "defaultMessage": "goose के रूप और अनुभव को अनुकूलित करें"
+    "defaultMessage": "Customize the look and feel of SHIP-OS Agent"
   },
   "settings.theme.title": {
     "defaultMessage": "थीम"
   },
   "settings.updates.description": {
-    "defaultMessage": "goose को सर्वोत्तम रूप से चालू रखने के लिए अपडेट की जाँच करें और इंस्टॉल करें"
+    "defaultMessage": "Check for and install SHIP-OS Agent updates"
   },
   "settings.updates.title": {
     "defaultMessage": "अद्यतन"
@@ -4070,26 +4049,14 @@
   "settingsView.tabApp": {
     "defaultMessage": "ऐप"
   },
-  "settingsView.tabAuth": {
-    "defaultMessage": "प्रामाणिक"
-  },
   "settingsView.tabChat": {
     "defaultMessage": "बातचीत"
-  },
-  "settingsView.tabExternalBackend": {
-    "defaultMessage": "बाहरी बैकएंड"
   },
   "settingsView.tabKeyboard": {
     "defaultMessage": "कीबोर्ड"
   },
-  "settingsView.tabLocalInference": {
-    "defaultMessage": "स्थानीय अनुमान"
-  },
   "settingsView.tabModels": {
-    "defaultMessage": "मॉडल"
-  },
-  "settingsView.tabPrompts": {
-    "defaultMessage": "संकेत"
+    "defaultMessage": "Providers"
   },
   "settingsView.title": {
     "defaultMessage": "Settings"

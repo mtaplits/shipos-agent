@@ -2333,29 +2333,14 @@
   "modelsSection.resetTitle": {
     "defaultMessage": "Set Semula Penyedia dan Model"
   },
-  "navigation.itemApps": {
-    "defaultMessage": "Apl"
-  },
-  "navigation.itemExtensions": {
-    "defaultMessage": "Sambungan"
-  },
   "navigation.itemHome": {
     "defaultMessage": "Sembang Baharu"
-  },
-  "navigation.itemRecipes": {
-    "defaultMessage": "Resipi"
-  },
-  "navigation.itemScheduler": {
-    "defaultMessage": "Penjadual"
   },
   "navigation.itemSessions": {
     "defaultMessage": "Sejarah Sesi"
   },
   "navigation.itemSettings": {
     "defaultMessage": "Tetapan"
-  },
-  "navigation.itemSkills": {
-    "defaultMessage": "Kemahiran"
   },
   "navigationPanel.chats": {
     "defaultMessage": "Sembang"
@@ -2403,10 +2388,10 @@
     "defaultMessage": "Cuba Semula"
   },
   "onboardingGuard.welcomeDescription": {
-    "defaultMessage": "Ejen AI tempatan anda. Sambungkan penyedia model AI untuk bermula."
+    "defaultMessage": "Connect your own AI provider to power private SHIP-OS conversations and tools."
   },
   "onboardingGuard.welcomeTitle": {
-    "defaultMessage": "Selamat datang ke goose"
+    "defaultMessage": "Set up SHIP-OS Agent"
   },
   "onboardingSuccess.allSet": {
     "defaultMessage": "Anda sudah bersedia untuk mula menggunakan goose."
@@ -2859,19 +2844,13 @@
     "defaultMessage": "Tambah Penyedia Tersuai"
   },
   "providerSelector.connectProvider": {
-    "defaultMessage": "Sambung ke Penyedia"
+    "defaultMessage": "Choose your AI provider"
   },
   "providerSelector.connectProviderDescription": {
-    "defaultMessage": "Sambung OpenAI, Anthropic, Google, dll"
-  },
-  "providerSelector.localModelDescription": {
-    "defaultMessage": "Muat turun model dan jalankan sepenuhnya pada mesin anda. Tiada kunci API, tiada akaun."
+    "defaultMessage": "Use your own provider account and API key. Keys stay in SHIP-OS Agent’s private profile."
   },
   "providerSelector.selectProvider": {
     "defaultMessage": "Pilih penyedia"
-  },
-  "providerSelector.useLocalModel": {
-    "defaultMessage": "Guna Model Tempatan"
   },
   "providerSettings.configurationSettings": {
     "defaultMessage": "Tetapan Konfigurasi Penyedia"
@@ -3900,7 +3879,7 @@
     "defaultMessage": "Penerangan sesi berjaya dikemas kini"
   },
   "settings.appearance.description": {
-    "defaultMessage": "Konfigurasikan cara goose muncul pada sistem anda"
+    "defaultMessage": "Configure how SHIP-OS Agent appears on your system"
   },
   "settings.appearance.title": {
     "defaultMessage": "Penampilan"
@@ -3915,13 +3894,13 @@
     "defaultMessage": "Penjejakan Kos"
   },
   "settings.dockIcon.description": {
-    "defaultMessage": "Tunjukkan goose dalam dok"
+    "defaultMessage": "Show SHIP-OS Agent in the dock"
   },
   "settings.dockIcon.title": {
     "defaultMessage": "Ikon dok"
   },
   "settings.help.description": {
-    "defaultMessage": "Bantu kami menambah baik goose dengan melaporkan isu atau meminta ciri baharu"
+    "defaultMessage": "Report issues or request SHIP-OS Agent features"
   },
   "settings.help.reportBug": {
     "defaultMessage": "Laporkan Pepijat"
@@ -3933,7 +3912,7 @@
     "defaultMessage": "Bantuan & maklum balas"
   },
   "settings.language.description": {
-    "defaultMessage": "Pilih bahasa paparan untuk goose"
+    "defaultMessage": "Choose the display language for SHIP-OS Agent"
   },
   "settings.language.english": {
     "defaultMessage": "English"
@@ -3990,7 +3969,7 @@
     "defaultMessage": "Bahasa Cina (Tradisional)"
   },
   "settings.menuBarIcon.description": {
-    "defaultMessage": "Tunjukkan goose dalam bar menu"
+    "defaultMessage": "Show SHIP-OS Agent in the menu bar"
   },
   "settings.menuBarIcon.title": {
     "defaultMessage": "Ikon bar menu"
@@ -4011,7 +3990,7 @@
     "defaultMessage": "Klik pada Notifications"
   },
   "settings.notifications.modal.macStep3": {
-    "defaultMessage": "Cari dan pilih goose dalam senarai aplikasi"
+    "defaultMessage": "Find and select SHIP-OS Agent in the application list"
   },
   "settings.notifications.modal.macStep4": {
     "defaultMessage": "Dayakan pemberitahuan dan laraskan tetapan mengikut kehendak"
@@ -4029,7 +4008,7 @@
     "defaultMessage": "Pergi ke System > Notifications"
   },
   "settings.notifications.modal.winStep3": {
-    "defaultMessage": "Cari dan pilih goose dalam senarai aplikasi"
+    "defaultMessage": "Find and select SHIP-OS Agent in the application list"
   },
   "settings.notifications.modal.winStep4": {
     "defaultMessage": "Hidupkan pemberitahuan dan laraskan tetapan mengikut kehendak"
@@ -4047,19 +4026,19 @@
     "defaultMessage": "Pemberitahuan"
   },
   "settings.preventSleep.description": {
-    "defaultMessage": "Pastikan komputer anda kekal terjaga semasa goose sedang menjalankan tugasan (skrin masih boleh dikunci)"
+    "defaultMessage": "Keep your computer awake while SHIP-OS Agent is running a task (screen can still lock)"
   },
   "settings.preventSleep.title": {
     "defaultMessage": "Cegah Tidur"
   },
   "settings.theme.description": {
-    "defaultMessage": "Sesuaikan rupa dan rasa goose"
+    "defaultMessage": "Customize the look and feel of SHIP-OS Agent"
   },
   "settings.theme.title": {
     "defaultMessage": "Tema"
   },
   "settings.updates.description": {
-    "defaultMessage": "Semak dan pasang kemas kini untuk memastikan goose berjalan dengan terbaik"
+    "defaultMessage": "Check for and install SHIP-OS Agent updates"
   },
   "settings.updates.title": {
     "defaultMessage": "Kemas Kini"
@@ -4070,26 +4049,14 @@
   "settingsView.tabApp": {
     "defaultMessage": "Aplikasi"
   },
-  "settingsView.tabAuth": {
-    "defaultMessage": "Pengesahan"
-  },
   "settingsView.tabChat": {
     "defaultMessage": "Sembang"
-  },
-  "settingsView.tabExternalBackend": {
-    "defaultMessage": "Backend Luaran"
   },
   "settingsView.tabKeyboard": {
     "defaultMessage": "Papan Kekunci"
   },
-  "settingsView.tabLocalInference": {
-    "defaultMessage": "Inferens Tempatan"
-  },
   "settingsView.tabModels": {
-    "defaultMessage": "Model"
-  },
-  "settingsView.tabPrompts": {
-    "defaultMessage": "Gesaan"
+    "defaultMessage": "Providers"
   },
   "settingsView.title": {
     "defaultMessage": "Tetapan"

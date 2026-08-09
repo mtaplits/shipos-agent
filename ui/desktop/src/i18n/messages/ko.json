@@ -2333,29 +2333,14 @@
   "modelsSection.resetTitle": {
     "defaultMessage": "제공업체 및 모델 초기화"
   },
-  "navigation.itemApps": {
-    "defaultMessage": "앱"
-  },
-  "navigation.itemExtensions": {
-    "defaultMessage": "익스텐션"
-  },
   "navigation.itemHome": {
     "defaultMessage": "새 채팅"
-  },
-  "navigation.itemRecipes": {
-    "defaultMessage": "레시피"
-  },
-  "navigation.itemScheduler": {
-    "defaultMessage": "스케줄러"
   },
   "navigation.itemSessions": {
     "defaultMessage": "채팅 기록"
   },
   "navigation.itemSettings": {
     "defaultMessage": "설정"
-  },
-  "navigation.itemSkills": {
-    "defaultMessage": "스킬"
   },
   "navigationPanel.chats": {
     "defaultMessage": "채팅"
@@ -2403,10 +2388,10 @@
     "defaultMessage": "다시 시도"
   },
   "onboardingGuard.welcomeDescription": {
-    "defaultMessage": "로컬 AI 에이전트입니다. 시작하려면 AI 모델 제공업체를 연결하세요."
+    "defaultMessage": "Connect your own AI provider to power private SHIP-OS conversations and tools."
   },
   "onboardingGuard.welcomeTitle": {
-    "defaultMessage": "goose에 오신 것을 환영합니다"
+    "defaultMessage": "Set up SHIP-OS Agent"
   },
   "onboardingSuccess.allSet": {
     "defaultMessage": "goose를 사용할 준비가 모두 완료되었습니다."
@@ -2859,19 +2844,13 @@
     "defaultMessage": "사용자 지정 제공업체 추가"
   },
   "providerSelector.connectProvider": {
-    "defaultMessage": "제공업체에 연결"
+    "defaultMessage": "Choose your AI provider"
   },
   "providerSelector.connectProviderDescription": {
-    "defaultMessage": "OpenAI, Anthropic, Google 등을 연결합니다."
-  },
-  "providerSelector.localModelDescription": {
-    "defaultMessage": "모델을 다운로드하여 이 기기에서 실행하세요. API 키나 계정이 필요하지 않습니다."
+    "defaultMessage": "Use your own provider account and API key. Keys stay in SHIP-OS Agent’s private profile."
   },
   "providerSelector.selectProvider": {
     "defaultMessage": "제공업체 선택"
-  },
-  "providerSelector.useLocalModel": {
-    "defaultMessage": "로컬 모델 사용"
   },
   "providerSettings.configurationSettings": {
     "defaultMessage": "제공업체 구성 설정"
@@ -3900,7 +3879,7 @@
     "defaultMessage": "세션 설명이 업데이트되었습니다."
   },
   "settings.appearance.description": {
-    "defaultMessage": "시스템에서 goose가 표시되는 방식을 설정합니다."
+    "defaultMessage": "Configure how SHIP-OS Agent appears on your system"
   },
   "settings.appearance.title": {
     "defaultMessage": "모양"
@@ -3915,13 +3894,13 @@
     "defaultMessage": "비용 추적"
   },
   "settings.dockIcon.description": {
-    "defaultMessage": "Dock에 goose를 표시합니다."
+    "defaultMessage": "Show SHIP-OS Agent in the dock"
   },
   "settings.dockIcon.title": {
     "defaultMessage": "Dock 아이콘"
   },
   "settings.help.description": {
-    "defaultMessage": "문제를 신고하거나 새 기능을 요청하여 goose 개선에 도움을 주세요."
+    "defaultMessage": "Report issues or request SHIP-OS Agent features"
   },
   "settings.help.reportBug": {
     "defaultMessage": "버그 신고"
@@ -3933,7 +3912,7 @@
     "defaultMessage": "도움말 및 피드백"
   },
   "settings.language.description": {
-    "defaultMessage": "goose의 표시 언어를 선택하세요"
+    "defaultMessage": "Choose the display language for SHIP-OS Agent"
   },
   "settings.language.english": {
     "defaultMessage": "영어"
@@ -3990,7 +3969,7 @@
     "defaultMessage": "중국어(번체)"
   },
   "settings.menuBarIcon.description": {
-    "defaultMessage": "메뉴 막대에 goose를 표시합니다."
+    "defaultMessage": "Show SHIP-OS Agent in the menu bar"
   },
   "settings.menuBarIcon.title": {
     "defaultMessage": "메뉴 막대 아이콘"
@@ -4011,7 +3990,7 @@
     "defaultMessage": "알림을 클릭하세요"
   },
   "settings.notifications.modal.macStep3": {
-    "defaultMessage": "애플리케이션 목록에서 goose를 찾아 선택하세요"
+    "defaultMessage": "Find and select SHIP-OS Agent in the application list"
   },
   "settings.notifications.modal.macStep4": {
     "defaultMessage": "원하는 대로 알림을 활성화하고 설정을 조정합니다."
@@ -4029,7 +4008,7 @@
     "defaultMessage": "시스템 > 알림으로 이동"
   },
   "settings.notifications.modal.winStep3": {
-    "defaultMessage": "애플리케이션 목록에서 goose를 찾아 선택하세요"
+    "defaultMessage": "Find and select SHIP-OS Agent in the application list"
   },
   "settings.notifications.modal.winStep4": {
     "defaultMessage": "알림을 켜고 원하는 대로 설정을 조정하세요."
@@ -4047,19 +4026,19 @@
     "defaultMessage": "알림"
   },
   "settings.preventSleep.description": {
-    "defaultMessage": "goose가 작업을 실행하는 동안 컴퓨터가 잠자기 상태로 전환되지 않도록 합니다. 화면은 잠길 수 있습니다."
+    "defaultMessage": "Keep your computer awake while SHIP-OS Agent is running a task (screen can still lock)"
   },
   "settings.preventSleep.title": {
     "defaultMessage": "잠자기 방지"
   },
   "settings.theme.description": {
-    "defaultMessage": "goose의 모양과 느낌을 맞춤 설정합니다."
+    "defaultMessage": "Customize the look and feel of SHIP-OS Agent"
   },
   "settings.theme.title": {
     "defaultMessage": "테마"
   },
   "settings.updates.description": {
-    "defaultMessage": "goose가 최상의 상태로 실행되도록 업데이트를 확인하고 설치합니다."
+    "defaultMessage": "Check for and install SHIP-OS Agent updates"
   },
   "settings.updates.title": {
     "defaultMessage": "업데이트"
@@ -4070,26 +4049,14 @@
   "settingsView.tabApp": {
     "defaultMessage": "앱"
   },
-  "settingsView.tabAuth": {
-    "defaultMessage": "인증"
-  },
   "settingsView.tabChat": {
     "defaultMessage": "채팅"
-  },
-  "settingsView.tabExternalBackend": {
-    "defaultMessage": "외부 백엔드"
   },
   "settingsView.tabKeyboard": {
     "defaultMessage": "키보드"
   },
-  "settingsView.tabLocalInference": {
-    "defaultMessage": "로컬 추론"
-  },
   "settingsView.tabModels": {
-    "defaultMessage": "모델"
-  },
-  "settingsView.tabPrompts": {
-    "defaultMessage": "프롬프트"
+    "defaultMessage": "Providers"
   },
   "settingsView.title": {
     "defaultMessage": "설정"

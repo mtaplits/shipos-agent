@@ -2333,29 +2333,14 @@
   "modelsSection.resetTitle": {
     "defaultMessage": "Сбросить провайдера и модель"
   },
-  "navigation.itemApps": {
-    "defaultMessage": "Приложения"
-  },
-  "navigation.itemExtensions": {
-    "defaultMessage": "Расширения"
-  },
   "navigation.itemHome": {
     "defaultMessage": "Новый чат"
-  },
-  "navigation.itemRecipes": {
-    "defaultMessage": "Рецепты"
-  },
-  "navigation.itemScheduler": {
-    "defaultMessage": "Планировщик"
   },
   "navigation.itemSessions": {
     "defaultMessage": "История сеансов"
   },
   "navigation.itemSettings": {
     "defaultMessage": "Настройки"
-  },
-  "navigation.itemSkills": {
-    "defaultMessage": "Навыки"
   },
   "navigationPanel.chats": {
     "defaultMessage": "Чаты"
@@ -2403,10 +2388,10 @@
     "defaultMessage": "Повторить"
   },
   "onboardingGuard.welcomeDescription": {
-    "defaultMessage": "Ваш локальный ИИ-агент. Подключите провайдера ИИ-модели, чтобы начать."
+    "defaultMessage": "Connect your own AI provider to power private SHIP-OS conversations and tools."
   },
   "onboardingGuard.welcomeTitle": {
-    "defaultMessage": "Добро пожаловать в goose"
+    "defaultMessage": "Set up SHIP-OS Agent"
   },
   "onboardingSuccess.allSet": {
     "defaultMessage": "Все готово для начала работы с goose."
@@ -2859,19 +2844,13 @@
     "defaultMessage": "Добавить пользовательского провайдера"
   },
   "providerSelector.connectProvider": {
-    "defaultMessage": "Подключиться к провайдеру"
+    "defaultMessage": "Choose your AI provider"
   },
   "providerSelector.connectProviderDescription": {
-    "defaultMessage": "Подключите OpenAI, Anthropic, Google и т. д."
-  },
-  "providerSelector.localModelDescription": {
-    "defaultMessage": "Скачайте модель и запускайте её полностью на своем компьютере. Без API-ключей и учетных записей."
+    "defaultMessage": "Use your own provider account and API key. Keys stay in SHIP-OS Agent’s private profile."
   },
   "providerSelector.selectProvider": {
     "defaultMessage": "Выберите провайдера"
-  },
-  "providerSelector.useLocalModel": {
-    "defaultMessage": "Использовать локальную модель"
   },
   "providerSettings.configurationSettings": {
     "defaultMessage": "Настройки конфигурации провайдера"
@@ -3900,7 +3879,7 @@
     "defaultMessage": "Описание сеанса успешно обновлено"
   },
   "settings.appearance.description": {
-    "defaultMessage": "Настройте, как goose отображается в вашей системе"
+    "defaultMessage": "Configure how SHIP-OS Agent appears on your system"
   },
   "settings.appearance.title": {
     "defaultMessage": "Внешний вид"
@@ -3915,13 +3894,13 @@
     "defaultMessage": "Отслеживание стоимости"
   },
   "settings.dockIcon.description": {
-    "defaultMessage": "Показывать goose в Dock"
+    "defaultMessage": "Show SHIP-OS Agent in the dock"
   },
   "settings.dockIcon.title": {
     "defaultMessage": "Значок Dock"
   },
   "settings.help.description": {
-    "defaultMessage": "Помогите улучшить goose: сообщайте о проблемах или запрашивайте новые функции"
+    "defaultMessage": "Report issues or request SHIP-OS Agent features"
   },
   "settings.help.reportBug": {
     "defaultMessage": "Сообщить об ошибке"
@@ -3933,7 +3912,7 @@
     "defaultMessage": "Помощь и отзывы"
   },
   "settings.language.description": {
-    "defaultMessage": "Выберите язык интерфейса goose"
+    "defaultMessage": "Choose the display language for SHIP-OS Agent"
   },
   "settings.language.english": {
     "defaultMessage": "Английский"
@@ -3990,7 +3969,7 @@
     "defaultMessage": "Китайский (традиционный)"
   },
   "settings.menuBarIcon.description": {
-    "defaultMessage": "Показывать goose в строке меню"
+    "defaultMessage": "Show SHIP-OS Agent in the menu bar"
   },
   "settings.menuBarIcon.title": {
     "defaultMessage": "Значок строки меню"
@@ -4011,7 +3990,7 @@
     "defaultMessage": "Нажмите «Уведомления»"
   },
   "settings.notifications.modal.macStep3": {
-    "defaultMessage": "Найдите и выберите goose в списке приложений"
+    "defaultMessage": "Find and select SHIP-OS Agent in the application list"
   },
   "settings.notifications.modal.macStep4": {
     "defaultMessage": "Включите уведомления и настройте параметры по желанию"
@@ -4029,7 +4008,7 @@
     "defaultMessage": "Перейдите в Система > Уведомления"
   },
   "settings.notifications.modal.winStep3": {
-    "defaultMessage": "Найдите и выберите goose в списке приложений"
+    "defaultMessage": "Find and select SHIP-OS Agent in the application list"
   },
   "settings.notifications.modal.winStep4": {
     "defaultMessage": "Включите уведомления и настройте параметры по желанию"
@@ -4047,19 +4026,19 @@
     "defaultMessage": "Уведомления"
   },
   "settings.preventSleep.description": {
-    "defaultMessage": "Не давать компьютеру засыпать, пока goose выполняет задачу (экран все равно может блокироваться)"
+    "defaultMessage": "Keep your computer awake while SHIP-OS Agent is running a task (screen can still lock)"
   },
   "settings.preventSleep.title": {
     "defaultMessage": "Запретить сон"
   },
   "settings.theme.description": {
-    "defaultMessage": "Настройте внешний вид и ощущения goose"
+    "defaultMessage": "Customize the look and feel of SHIP-OS Agent"
   },
   "settings.theme.title": {
     "defaultMessage": "Тема"
   },
   "settings.updates.description": {
-    "defaultMessage": "Проверяйте и устанавливайте обновления, чтобы goose работал оптимально"
+    "defaultMessage": "Check for and install SHIP-OS Agent updates"
   },
   "settings.updates.title": {
     "defaultMessage": "Обновления"
@@ -4070,26 +4049,14 @@
   "settingsView.tabApp": {
     "defaultMessage": "Приложение"
   },
-  "settingsView.tabAuth": {
-    "defaultMessage": "Авторизация"
-  },
   "settingsView.tabChat": {
     "defaultMessage": "Чат"
-  },
-  "settingsView.tabExternalBackend": {
-    "defaultMessage": "Внешний бэкенд"
   },
   "settingsView.tabKeyboard": {
     "defaultMessage": "Клавиатура"
   },
-  "settingsView.tabLocalInference": {
-    "defaultMessage": "Локальный инференс"
-  },
   "settingsView.tabModels": {
-    "defaultMessage": "Модели"
-  },
-  "settingsView.tabPrompts": {
-    "defaultMessage": "Промпты"
+    "defaultMessage": "Providers"
   },
   "settingsView.title": {
     "defaultMessage": "Настройки"

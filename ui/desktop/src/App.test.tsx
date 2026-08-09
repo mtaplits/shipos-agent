@@ -262,7 +262,8 @@ describe('App Component - Brand New State', () => {
       expect(mockElectron.reactReady).toHaveBeenCalled();
     });
 
-    expect(screen.getByText(/^Welcome to goose/)).toBeInTheDocument();
+    expect(screen.getByText(/^Set up SHIP-OS Agent/)).toBeInTheDocument();
+    expect(screen.queryByText('Use a Local Model')).not.toBeInTheDocument();
   });
 
   it('should not redirect when provider is configured', async () => {

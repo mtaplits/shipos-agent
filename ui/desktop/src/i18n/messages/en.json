@@ -2333,20 +2333,8 @@
   "modelsSection.resetTitle": {
     "defaultMessage": "Reset Provider and Model"
   },
-  "navigation.itemApps": {
-    "defaultMessage": "Apps"
-  },
-  "navigation.itemExtensions": {
-    "defaultMessage": "Extensions"
-  },
   "navigation.itemHome": {
     "defaultMessage": "New Chat"
-  },
-  "navigation.itemRecipes": {
-    "defaultMessage": "Recipes"
-  },
-  "navigation.itemScheduler": {
-    "defaultMessage": "Scheduler"
   },
   "navigation.itemSessions": {
     "defaultMessage": "Session History"
@@ -2356,9 +2344,6 @@
   },
   "navigation.itemShipos": {
     "defaultMessage": "SHIP-OS"
-  },
-  "navigation.itemSkills": {
-    "defaultMessage": "Skills"
   },
   "navigationPanel.chats": {
     "defaultMessage": "Chats"
@@ -2406,10 +2391,10 @@
     "defaultMessage": "Retry"
   },
   "onboardingGuard.welcomeDescription": {
-    "defaultMessage": "Your local AI agent. Connect an AI model provider to get started."
+    "defaultMessage": "Connect your own AI provider to power private SHIP-OS conversations and tools."
   },
   "onboardingGuard.welcomeTitle": {
-    "defaultMessage": "Welcome to goose"
+    "defaultMessage": "Set up SHIP-OS Agent"
   },
   "onboardingSuccess.allSet": {
     "defaultMessage": "You're all set to start using goose."
@@ -2862,19 +2847,13 @@
     "defaultMessage": "Add Custom Provider"
   },
   "providerSelector.connectProvider": {
-    "defaultMessage": "Connect to a Provider"
+    "defaultMessage": "Choose your AI provider"
   },
   "providerSelector.connectProviderDescription": {
-    "defaultMessage": "Connect OpenAI, Anthropic, Google, etc"
-  },
-  "providerSelector.localModelDescription": {
-    "defaultMessage": "Download a model and run it on this device. No API key or account needed."
+    "defaultMessage": "Use your own provider account and API key. Keys stay in SHIP-OS Agent’s private profile."
   },
   "providerSelector.selectProvider": {
     "defaultMessage": "Select a provider"
-  },
-  "providerSelector.useLocalModel": {
-    "defaultMessage": "Use a Local Model"
   },
   "providerSettings.configurationSettings": {
     "defaultMessage": "Provider Configuration Settings"
@@ -3903,7 +3882,7 @@
     "defaultMessage": "Session description updated successfully"
   },
   "settings.appearance.description": {
-    "defaultMessage": "Configure how goose appears on your system"
+    "defaultMessage": "Configure how SHIP-OS Agent appears on your system"
   },
   "settings.appearance.title": {
     "defaultMessage": "Appearance"
@@ -3918,13 +3897,13 @@
     "defaultMessage": "Cost Tracking"
   },
   "settings.dockIcon.description": {
-    "defaultMessage": "Show goose in the dock"
+    "defaultMessage": "Show SHIP-OS Agent in the dock"
   },
   "settings.dockIcon.title": {
     "defaultMessage": "Dock icon"
   },
   "settings.help.description": {
-    "defaultMessage": "Help us improve goose by reporting issues or requesting new features"
+    "defaultMessage": "Report issues or request SHIP-OS Agent features"
   },
   "settings.help.reportBug": {
     "defaultMessage": "Report a Bug"
@@ -3936,7 +3915,7 @@
     "defaultMessage": "Help & feedback"
   },
   "settings.language.description": {
-    "defaultMessage": "Choose the display language for goose"
+    "defaultMessage": "Choose the display language for SHIP-OS Agent"
   },
   "settings.language.english": {
     "defaultMessage": "English"
@@ -3993,7 +3972,7 @@
     "defaultMessage": "Chinese (Traditional)"
   },
   "settings.menuBarIcon.description": {
-    "defaultMessage": "Show goose in the menu bar"
+    "defaultMessage": "Show SHIP-OS Agent in the menu bar"
   },
   "settings.menuBarIcon.title": {
     "defaultMessage": "Menu bar icon"
@@ -4014,7 +3993,7 @@
     "defaultMessage": "Click on Notifications"
   },
   "settings.notifications.modal.macStep3": {
-    "defaultMessage": "Find and select goose in the application list"
+    "defaultMessage": "Find and select SHIP-OS Agent in the application list"
   },
   "settings.notifications.modal.macStep4": {
     "defaultMessage": "Enable notifications and adjust settings as desired"
@@ -4032,7 +4011,7 @@
     "defaultMessage": "Go to System > Notifications"
   },
   "settings.notifications.modal.winStep3": {
-    "defaultMessage": "Find and select goose in the application list"
+    "defaultMessage": "Find and select SHIP-OS Agent in the application list"
   },
   "settings.notifications.modal.winStep4": {
     "defaultMessage": "Toggle notifications on and adjust settings as desired"
@@ -4050,19 +4029,19 @@
     "defaultMessage": "Notifications"
   },
   "settings.preventSleep.description": {
-    "defaultMessage": "Keep your computer awake while goose is running a task (screen can still lock)"
+    "defaultMessage": "Keep your computer awake while SHIP-OS Agent is running a task (screen can still lock)"
   },
   "settings.preventSleep.title": {
     "defaultMessage": "Prevent Sleep"
   },
   "settings.theme.description": {
-    "defaultMessage": "Customize the look and feel of goose"
+    "defaultMessage": "Customize the look and feel of SHIP-OS Agent"
   },
   "settings.theme.title": {
     "defaultMessage": "Theme"
   },
   "settings.updates.description": {
-    "defaultMessage": "Check for and install updates to keep goose running at its best"
+    "defaultMessage": "Check for and install SHIP-OS Agent updates"
   },
   "settings.updates.title": {
     "defaultMessage": "Updates"
@@ -4073,26 +4052,14 @@
   "settingsView.tabApp": {
     "defaultMessage": "App"
   },
-  "settingsView.tabAuth": {
-    "defaultMessage": "Auth"
-  },
   "settingsView.tabChat": {
     "defaultMessage": "Chat"
-  },
-  "settingsView.tabExternalBackend": {
-    "defaultMessage": "External Backend"
   },
   "settingsView.tabKeyboard": {
     "defaultMessage": "Keyboard"
   },
-  "settingsView.tabLocalInference": {
-    "defaultMessage": "Local Inference"
-  },
   "settingsView.tabModels": {
-    "defaultMessage": "Models"
-  },
-  "settingsView.tabPrompts": {
-    "defaultMessage": "Prompts"
+    "defaultMessage": "Providers"
   },
   "settingsView.title": {
     "defaultMessage": "Settings"

@@ -10,12 +10,8 @@ import {
 } from 'react-router';
 import { importNostrSessionFromDeepLink } from './sessionLinks';
 import { ErrorUI } from './components/ErrorBoundary';
-import { ExtensionInstallModal } from './components/ExtensionInstallModal';
-import RecipeParamsModalContainer from './components/RecipeParamsModalContainer';
 import { isRecipeParamsCancelled } from './acp/errors';
 import { toast, ToastContainer } from 'react-toastify';
-import AnnouncementModal from './components/AnnouncementModal';
-import TelemetryConsentPrompt from './components/TelemetryConsentPrompt';
 import OnboardingGuard from './components/onboarding/OnboardingGuard';
 import { createSession } from './sessions';
 import { acpListSessions, acpDeleteSession } from './acp/sessions';
@@ -31,26 +27,18 @@ interface PairRouteState {
 }
 import SettingsView, { SettingsViewOptions } from './components/settings/SettingsView';
 import SessionsView from './components/sessions/SessionsView';
-import SchedulesView from './components/schedule/SchedulesView';
 import ShiposView from './components/shipos/ShiposView';
-import ShiposFirstRunGate from './components/shipos/ShiposFirstRunGate';import ProviderSettings from './components/settings/providers/ProviderSettingsPage';
+import ShiposFirstRunGate from './components/shipos/ShiposFirstRunGate';
+import ProviderSettings from './components/settings/providers/ProviderSettingsPage';
 import { AppLayout } from './components/Layout/AppLayout';
 import { ChatProvider, DEFAULT_CHAT_TITLE } from './contexts/ChatContext';
-import LauncherView from './components/LauncherView';
 
 import 'react-toastify/dist/ReactToastify.css';
 import { useConfig } from './components/ConfigContext';
 import { ModelAndProviderProvider } from './components/ModelAndProviderContext';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { FeaturesProvider } from './contexts/FeaturesContext';
-import PermissionSettingsView from './components/settings/permission/PermissionSetting';
 
-import ExtensionsView, { ExtensionsViewOptions } from './components/extensions/ExtensionsView';
-import RecipesView from './components/recipes/RecipesView';
-import SkillsView from './components/skills/SkillsView';
-import AppsView from './components/apps/AppsView';
-import StandaloneAppView from './components/apps/StandaloneAppView';
-import { View, ViewOptions } from './utils/navigationUtils';
 
 import { useNavigation } from './hooks/useNavigation';
 import { errorMessage } from './utils/conversionUtils';
@@ -189,7 +177,6 @@ const SettingsRoute = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const setView = useNavigation();
-
   // Get viewOptions from location.state, history.state, or URL search params
   const viewOptions =
     (location.state as SettingsViewOptions) || (window.history.state as SettingsViewOptions) || {};
@@ -207,59 +194,6 @@ const SessionsRoute = () => {
   return <SessionsView />;
 };
 
-const SchedulesRoute = () => {
-  const navigate = useNavigate();
-  return <SchedulesView onClose={() => navigate('/')} />;
-};
-
-const RecipesRoute = () => {
-  return <RecipesView />;
-};
-
-const SkillsRoute = () => {
-  return <SkillsView />;
-};
-
-const PermissionRoute = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-  const parentView = location.state?.parentView as View;
-  const parentViewOptions = location.state?.parentViewOptions as ViewOptions;
-
-  return (
-    <PermissionSettingsView
-      onClose={() => {
-        // Navigate back to parent view with options
-        switch (parentView) {
-          case 'chat':
-            navigate('/');
-            break;
-          case 'pair':
-            navigate('/pair');
-            break;
-          case 'settings':
-            navigate('/settings', { state: parentViewOptions });
-            break;
-          case 'sessions':
-            navigate('/sessions');
-            break;
-          case 'schedules':
-            navigate('/schedules');
-            break;
-          case 'recipes':
-            navigate('/recipes');
-            break;
-          case 'skills':
-            navigate('/skills');
-            break;
-          default:
-            navigate('/');
-        }
-      }}
-    />
-  );
-};
-
 const ConfigureProvidersRoute = () => {
   const navigate = useNavigate();
 
@@ -273,47 +207,12 @@ const ConfigureProvidersRoute = () => {
   );
 };
 
-const ExtensionsRoute = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
-
-  // Get viewOptions from location.state or history.state (for deep link extensions)
-  const viewOptions =
-    (location.state as ExtensionsViewOptions) ||
-    (window.history.state as ExtensionsViewOptions) ||
-    {};
-
-  return (
-    <ExtensionsView
-      onClose={() => navigate(-1)}
-      setView={(view, options) => {
-        switch (view) {
-          case 'chat':
-            navigate('/');
-            break;
-          case 'pair':
-            navigate('/pair', { state: options });
-            break;
-          case 'settings':
-            navigate('/settings', { state: options });
-            break;
-          default:
-            navigate('/');
-        }
-      }}
-      viewOptions={viewOptions}
-    />
-  );
-};
-
 export function AppInner() {
   const [fatalError, setFatalError] = useState<string | null>(null);
 
   const nostrImportInFlight = useRef<string | null>(null);
 
   const navigate = useNavigate();
-  const setView = useNavigation();
-
   const [chat, setChat] = useState<ChatType>({
     sessionId: '',
     name: DEFAULT_CHAT_TITLE,
@@ -386,8 +285,6 @@ export function AppInner() {
       window.removeEventListener(AppEvents.SESSION_DELETED, handleSessionDeleted);
     };
   }, []);
-
-  const { addExtension } = useConfig();
 
   useEffect(() => {
     try {
@@ -535,13 +432,21 @@ export function AppInner() {
 
   useEffect(() => {
     const handleSetView = (_event: IpcRendererEvent, ...args: unknown[]) => {
-      const newView = args[0] as View;
+      const requestedView = String(args[0] ?? 'chat');
       const section = args[1] as string | undefined;
+      const allowedPath: Record<string, string> = {
+        chat: '/',
+        pair: '/pair',
+        sessions: '/sessions',
+        settings: '/settings',
+        shipos: '/shipos',
+      };
+      const target = allowedPath[requestedView] ?? '/';
 
-      if (section && newView === 'settings') {
+      if (section && requestedView === 'settings') {
         navigate(`/settings?section=${section}`);
       } else {
-        navigate(`/${newView}`);
+        navigate(target);
       }
     };
 
@@ -625,15 +530,11 @@ export function AppInner() {
         closeOnClick
         pauseOnHover
       />
-      <ExtensionInstallModal addExtension={addExtension} setView={setView} />
-      <RecipeParamsModalContainer />
       <div className="relative w-screen h-screen overflow-hidden bg-background-secondary flex flex-col">
         <div className="titlebar-drag-region" />
         <div style={{ position: 'relative', width: '100%', height: '100%' }}>
           <Routes>
-            <Route path="launcher" element={<LauncherView />} />
             <Route path="configure-providers" element={<ConfigureProvidersRoute />} />
-            <Route path="standalone-app" element={<StandaloneAppView />} />
             <Route
               path="/"
               element={
@@ -655,21 +556,8 @@ export function AppInner() {
                 }
               />
               <Route path="settings" element={<SettingsRoute />} />
-              <Route
-                path="extensions"
-                element={
-                  <ChatProvider chat={chat} setChat={setChat} contextKey="extensions">
-                    <ExtensionsRoute />
-                  </ChatProvider>
-                }
-              />
-              <Route path="apps" element={<AppsView />} />
               <Route path="sessions" element={<SessionsRoute />} />
-              <Route path="schedules" element={<SchedulesRoute />} />
               <Route path="shipos" element={<ShiposView />} />
-              <Route path="recipes" element={<RecipesRoute />} />
-              <Route path="skills" element={<SkillsRoute />} />
-              <Route path="permission" element={<PermissionRoute />} />
             </Route>
           </Routes>
         </div>
@@ -686,8 +574,6 @@ export default function App() {
           <HashRouter>
             <ShiposFirstRunGate>
               <AppInner />
-              <AnnouncementModal />
-              <TelemetryConsentPrompt />
             </ShiposFirstRunGate>
           </HashRouter>
         </ModelAndProviderProvider>

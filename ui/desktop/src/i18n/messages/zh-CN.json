@@ -2333,29 +2333,14 @@
   "modelsSection.resetTitle": {
     "defaultMessage": "重置提供商和模型"
   },
-  "navigation.itemApps": {
-    "defaultMessage": "应用"
-  },
-  "navigation.itemExtensions": {
-    "defaultMessage": "扩展"
-  },
   "navigation.itemHome": {
     "defaultMessage": "新对话"
-  },
-  "navigation.itemRecipes": {
-    "defaultMessage": "配方"
-  },
-  "navigation.itemScheduler": {
-    "defaultMessage": "调度"
   },
   "navigation.itemSessions": {
     "defaultMessage": "会话历史"
   },
   "navigation.itemSettings": {
     "defaultMessage": "设置"
-  },
-  "navigation.itemSkills": {
-    "defaultMessage": "技能"
   },
   "navigationPanel.chats": {
     "defaultMessage": "聊天"
@@ -2403,10 +2388,10 @@
     "defaultMessage": "重试"
   },
   "onboardingGuard.welcomeDescription": {
-    "defaultMessage": "你的本地 AI agent。连接 AI 模型提供商即可开始。"
+    "defaultMessage": "Connect your own AI provider to power private SHIP-OS conversations and tools."
   },
   "onboardingGuard.welcomeTitle": {
-    "defaultMessage": "欢迎使用 goose"
+    "defaultMessage": "Set up SHIP-OS Agent"
   },
   "onboardingSuccess.allSet": {
     "defaultMessage": "一切就绪，可以开始使用 goose 了。"
@@ -2859,19 +2844,13 @@
     "defaultMessage": "添加自定义提供商"
   },
   "providerSelector.connectProvider": {
-    "defaultMessage": "连接提供商"
+    "defaultMessage": "Choose your AI provider"
   },
   "providerSelector.connectProviderDescription": {
-    "defaultMessage": "连接 OpenAI、Anthropic、Google 等"
-  },
-  "providerSelector.localModelDescription": {
-    "defaultMessage": "下载模型并完全运行在你的机器上。无需 API 密钥，无需账号。"
+    "defaultMessage": "Use your own provider account and API key. Keys stay in SHIP-OS Agent’s private profile."
   },
   "providerSelector.selectProvider": {
     "defaultMessage": "选择提供商"
-  },
-  "providerSelector.useLocalModel": {
-    "defaultMessage": "使用本地模型"
   },
   "providerSettings.configurationSettings": {
     "defaultMessage": "提供商配置项"
@@ -3900,7 +3879,7 @@
     "defaultMessage": "会话描述更新成功"
   },
   "settings.appearance.description": {
-    "defaultMessage": "配置 goose 在你系统中的外观"
+    "defaultMessage": "Configure how SHIP-OS Agent appears on your system"
   },
   "settings.appearance.title": {
     "defaultMessage": "外观"
@@ -3915,13 +3894,13 @@
     "defaultMessage": "费用跟踪"
   },
   "settings.dockIcon.description": {
-    "defaultMessage": "在 Dock 中显示 goose"
+    "defaultMessage": "Show SHIP-OS Agent in the dock"
   },
   "settings.dockIcon.title": {
     "defaultMessage": "Dock 图标"
   },
   "settings.help.description": {
-    "defaultMessage": "通过报告问题或请求新功能帮助我们改进 goose"
+    "defaultMessage": "Report issues or request SHIP-OS Agent features"
   },
   "settings.help.reportBug": {
     "defaultMessage": "报告 Bug"
@@ -3933,7 +3912,7 @@
     "defaultMessage": "帮助与反馈"
   },
   "settings.language.description": {
-    "defaultMessage": "选择 goose 的显示语言"
+    "defaultMessage": "Choose the display language for SHIP-OS Agent"
   },
   "settings.language.english": {
     "defaultMessage": "英语"
@@ -3990,7 +3969,7 @@
     "defaultMessage": "中文（繁体）"
   },
   "settings.menuBarIcon.description": {
-    "defaultMessage": "在菜单栏显示 goose"
+    "defaultMessage": "Show SHIP-OS Agent in the menu bar"
   },
   "settings.menuBarIcon.title": {
     "defaultMessage": "菜单栏图标"
@@ -4011,7 +3990,7 @@
     "defaultMessage": "点击“通知”"
   },
   "settings.notifications.modal.macStep3": {
-    "defaultMessage": "在应用列表中找到并选择 goose"
+    "defaultMessage": "Find and select SHIP-OS Agent in the application list"
   },
   "settings.notifications.modal.macStep4": {
     "defaultMessage": "启用通知并按需调整设置"
@@ -4029,7 +4008,7 @@
     "defaultMessage": "前往 系统 > 通知"
   },
   "settings.notifications.modal.winStep3": {
-    "defaultMessage": "在应用列表中找到并选择 goose"
+    "defaultMessage": "Find and select SHIP-OS Agent in the application list"
   },
   "settings.notifications.modal.winStep4": {
     "defaultMessage": "开启通知并按需调整设置"
@@ -4047,19 +4026,19 @@
     "defaultMessage": "通知"
   },
   "settings.preventSleep.description": {
-    "defaultMessage": "goose 运行任务期间保持电脑不休眠（屏幕仍可锁定）"
+    "defaultMessage": "Keep your computer awake while SHIP-OS Agent is running a task (screen can still lock)"
   },
   "settings.preventSleep.title": {
     "defaultMessage": "阻止休眠"
   },
   "settings.theme.description": {
-    "defaultMessage": "自定义 goose 的外观和风格"
+    "defaultMessage": "Customize the look and feel of SHIP-OS Agent"
   },
   "settings.theme.title": {
     "defaultMessage": "主题"
   },
   "settings.updates.description": {
-    "defaultMessage": "检查并安装更新，让 goose 保持最佳状态"
+    "defaultMessage": "Check for and install SHIP-OS Agent updates"
   },
   "settings.updates.title": {
     "defaultMessage": "更新"
@@ -4070,26 +4049,14 @@
   "settingsView.tabApp": {
     "defaultMessage": "应用"
   },
-  "settingsView.tabAuth": {
-    "defaultMessage": "身份验证"
-  },
   "settingsView.tabChat": {
     "defaultMessage": "聊天"
-  },
-  "settingsView.tabExternalBackend": {
-    "defaultMessage": "外部后端"
   },
   "settingsView.tabKeyboard": {
     "defaultMessage": "键盘"
   },
-  "settingsView.tabLocalInference": {
-    "defaultMessage": "本地推理"
-  },
   "settingsView.tabModels": {
-    "defaultMessage": "模型"
-  },
-  "settingsView.tabPrompts": {
-    "defaultMessage": "提示词"
+    "defaultMessage": "Providers"
   },
   "settingsView.title": {
     "defaultMessage": "设置"

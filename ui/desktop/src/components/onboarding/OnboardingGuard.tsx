@@ -1,29 +1,25 @@
 import { useEffect, useRef, useState } from 'react';
-import { useNavigate } from 'react-router';
 import { useConfig } from '../ConfigContext';
 import { useModelAndProvider } from '../ModelAndProviderContext';
 import { acpListProviderDetails, acpReadDefaults, acpSaveDefaults } from '../../acp/providers';
-import { Goose } from '../icons';
+import { Ship } from 'lucide-react';
 import { Button } from '../ui/button';
 import ProviderSelector from './ProviderSelector';
-import OnboardingSuccess from './OnboardingSuccess';
 import {
   trackOnboardingStarted,
   trackOnboardingCompleted,
   trackOnboardingProviderSelected,
-  trackTelemetryPreference,
-  setTelemetryEnabled as setAnalyticsTelemetryEnabled,
 } from '../../utils/analytics';
 import { defineMessages, useIntl } from '../../i18n';
 
 const i18n = defineMessages({
   welcomeTitle: {
     id: 'onboardingGuard.welcomeTitle',
-    defaultMessage: 'Welcome to goose',
+    defaultMessage: 'Set up SHIP-OS Agent',
   },
   welcomeDescription: {
     id: 'onboardingGuard.welcomeDescription',
-    defaultMessage: 'Your local AI agent. Connect an AI model provider to get started.',
+    defaultMessage: 'Connect your own AI provider to power private SHIP-OS conversations and tools.',
   },
   checkProviderErrorTitle: {
     id: 'onboardingGuard.checkProviderErrorTitle',
@@ -47,7 +43,6 @@ interface OnboardingGuardProps {
 
 export default function OnboardingGuard({ children }: OnboardingGuardProps) {
   const intl = useIntl();
-  const navigate = useNavigate();
   const { upsert } = useConfig();
   const { getFallbackModelAndProvider, refreshCurrentModelAndProvider } = useModelAndProvider();
 
@@ -55,11 +50,6 @@ export default function OnboardingGuard({ children }: OnboardingGuardProps) {
   const [hasProvider, setHasProvider] = useState(false);
   const [checkProviderError, setCheckProviderError] = useState(false);
   const [hasSelection, setHasSelection] = useState(false);
-  const [configuredProvider, setConfiguredProvider] = useState<string | null>(null);
-  const [configuredProviderDisplayName, setConfiguredProviderDisplayName] = useState<string | null>(
-    null
-  );
-  const [configuredModel, setConfiguredModel] = useState<string | null>(null);
   const hasTrackedOnboardingStart = useRef(false);
 
   const checkProvider = async (retries = 3, delay = 1000) => {
@@ -118,26 +108,13 @@ export default function OnboardingGuard({ children }: OnboardingGuardProps) {
     const matchedProvider = providers.find((p) => p.name === providerName);
     const resolvedModel = modelId ?? matchedProvider?.metadata.default_model ?? null;
     await acpSaveDefaults(providerName, resolvedModel);
-    setConfiguredModel(resolvedModel);
     await refreshCurrentModelAndProvider();
-    setConfiguredProvider(providerName);
-    setConfiguredProviderDisplayName(matchedProvider?.metadata.display_name || providerName);
-  };
-
-  const finishOnboarding = async (telemetryEnabled: boolean) => {
     try {
-      await upsert(TELEMETRY_CONFIG_KEY, telemetryEnabled, false);
+      await upsert(TELEMETRY_CONFIG_KEY, false, false);
     } catch (error) {
-      console.error('Failed to save telemetry preference:', error);
+      console.error('Failed to disable telemetry:', error);
     }
-    trackTelemetryPreference(telemetryEnabled, 'onboarding');
-    if (configuredProvider) {
-      trackOnboardingCompleted(configuredProvider, configuredModel ?? undefined);
-    }
-    if (!telemetryEnabled) {
-      setAnalyticsTelemetryEnabled(false);
-    }
-    navigate('/', { replace: true });
+    trackOnboardingCompleted(providerName, resolvedModel ?? undefined);
     setHasProvider(true);
   };
 
@@ -150,7 +127,7 @@ export default function OnboardingGuard({ children }: OnboardingGuardProps) {
       <div className="h-screen w-full bg-background-default flex flex-col items-center justify-center">
         <div className="text-center max-w-md">
           <div className="mb-4">
-            <Goose className="size-8 mx-auto" />
+            <Ship className="size-8 mx-auto" aria-hidden />
           </div>
           <h1 className="text-xl font-light mb-3">{intl.formatMessage(i18n.checkProviderErrorTitle)}</h1>
           <p className="text-text-muted mb-6">{intl.formatMessage(i18n.checkProviderErrorDescription)}</p>
@@ -166,12 +143,6 @@ export default function OnboardingGuard({ children }: OnboardingGuardProps) {
     return <>{children}</>;
   }
 
-  if (configuredProviderDisplayName) {
-    return (
-      <OnboardingSuccess providerName={configuredProviderDisplayName} onFinish={finishOnboarding} />
-    );
-  }
-
   return (
     <div className="h-screen w-full bg-background-default overflow-hidden">
       <div className="h-full overflow-y-auto">
@@ -183,7 +154,7 @@ export default function OnboardingGuard({ children }: OnboardingGuardProps) {
               className={`text-left transition-all duration-500 ease-in-out overflow-hidden ${hasSelection ? 'max-h-0 opacity-0 mb-0' : 'max-h-60 opacity-100 mb-8'}`}
             >
               <div className="mb-4">
-                <Goose className="size-8" />
+                <Ship className="size-8" aria-hidden />
               </div>
               <h1 className="text-2xl sm:text-4xl font-light mb-3">{intl.formatMessage(i18n.welcomeTitle)}</h1>
               <p className="text-text-muted text-base sm:text-lg">

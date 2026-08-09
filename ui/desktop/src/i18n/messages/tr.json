@@ -2333,29 +2333,14 @@
   "modelsSection.resetTitle": {
     "defaultMessage": "Sağlayıcıyı ve Modeli Sıfırla"
   },
-  "navigation.itemApps": {
-    "defaultMessage": "Uygulamalar"
-  },
-  "navigation.itemExtensions": {
-    "defaultMessage": "Uzantılar"
-  },
   "navigation.itemHome": {
     "defaultMessage": "Yeni Sohbet"
-  },
-  "navigation.itemRecipes": {
-    "defaultMessage": "Tarifler"
-  },
-  "navigation.itemScheduler": {
-    "defaultMessage": "Zamanlayıcı"
   },
   "navigation.itemSessions": {
     "defaultMessage": "Oturum Geçmişi"
   },
   "navigation.itemSettings": {
     "defaultMessage": "Ayarlar"
-  },
-  "navigation.itemSkills": {
-    "defaultMessage": "Beceriler"
   },
   "navigationPanel.chats": {
     "defaultMessage": "Sohbetler"
@@ -2403,10 +2388,10 @@
     "defaultMessage": "Yeniden dene"
   },
   "onboardingGuard.welcomeDescription": {
-    "defaultMessage": "Yerel AI temsilciniz. Başlamak için bir AI model sağlayıcısına bağlanın."
+    "defaultMessage": "Connect your own AI provider to power private SHIP-OS conversations and tools."
   },
   "onboardingGuard.welcomeTitle": {
-    "defaultMessage": "goose'a hoş geldiniz"
+    "defaultMessage": "Set up SHIP-OS Agent"
   },
   "onboardingSuccess.allSet": {
     "defaultMessage": "goose'yi kullanmaya başlamaya hazırsınız."
@@ -2859,19 +2844,13 @@
     "defaultMessage": "Özel Sağlayıcı Ekle"
   },
   "providerSelector.connectProvider": {
-    "defaultMessage": "Bir Sağlayıcıya Bağlan"
+    "defaultMessage": "Choose your AI provider"
   },
   "providerSelector.connectProviderDescription": {
-    "defaultMessage": "OpenAI, Anthropic, Google, vb.'yi bağlayın"
-  },
-  "providerSelector.localModelDescription": {
-    "defaultMessage": "Bir model indirin ve tamamen makinenizde çalıştırın. API anahtarı yok, hesap yok."
+    "defaultMessage": "Use your own provider account and API key. Keys stay in SHIP-OS Agent’s private profile."
   },
   "providerSelector.selectProvider": {
     "defaultMessage": "Bir sağlayıcı seçin"
-  },
-  "providerSelector.useLocalModel": {
-    "defaultMessage": "Yerel Bir Model Kullanın"
   },
   "providerSettings.configurationSettings": {
     "defaultMessage": "Sağlayıcı Yapılandırma Ayarları"
@@ -3900,7 +3879,7 @@
     "defaultMessage": "Oturum açıklaması başarıyla güncellendi"
   },
   "settings.appearance.description": {
-    "defaultMessage": "goose'nin sisteminizde nasıl görüneceğini yapılandırın"
+    "defaultMessage": "Configure how SHIP-OS Agent appears on your system"
   },
   "settings.appearance.title": {
     "defaultMessage": "Görünüm"
@@ -3915,13 +3894,13 @@
     "defaultMessage": "Maliyet Takibi"
   },
   "settings.dockIcon.description": {
-    "defaultMessage": "Dock'ta goose'yi göster"
+    "defaultMessage": "Show SHIP-OS Agent in the dock"
   },
   "settings.dockIcon.title": {
     "defaultMessage": "Bağlantı noktası simgesi"
   },
   "settings.help.description": {
-    "defaultMessage": "Sorunları bildirerek veya yeni özellikler talep ederek goose'yi geliştirmemize yardımcı olun"
+    "defaultMessage": "Report issues or request SHIP-OS Agent features"
   },
   "settings.help.reportBug": {
     "defaultMessage": "Hata Bildir"
@@ -3933,7 +3912,7 @@
     "defaultMessage": "Yardım ve geri bildirim"
   },
   "settings.language.description": {
-    "defaultMessage": "goose için görüntüleme dilini seçin"
+    "defaultMessage": "Choose the display language for SHIP-OS Agent"
   },
   "settings.language.english": {
     "defaultMessage": "İngilizce"
@@ -3990,7 +3969,7 @@
     "defaultMessage": "Çince (Geleneksel)"
   },
   "settings.menuBarIcon.description": {
-    "defaultMessage": "Menü çubuğunda goose'yi göster"
+    "defaultMessage": "Show SHIP-OS Agent in the menu bar"
   },
   "settings.menuBarIcon.title": {
     "defaultMessage": "Menü çubuğu simgesi"
@@ -4011,7 +3990,7 @@
     "defaultMessage": "Bildirimler'e tıklayın"
   },
   "settings.notifications.modal.macStep3": {
-    "defaultMessage": "Uygulama listesinde goose'yi bulun ve seçin"
+    "defaultMessage": "Find and select SHIP-OS Agent in the application list"
   },
   "settings.notifications.modal.macStep4": {
     "defaultMessage": "Bildirimleri etkinleştirin ve ayarları istediğiniz gibi yapın"
@@ -4029,7 +4008,7 @@
     "defaultMessage": "Sistem > Bildirimler'e gidin"
   },
   "settings.notifications.modal.winStep3": {
-    "defaultMessage": "Uygulama listesinde goose'yi bulun ve seçin"
+    "defaultMessage": "Find and select SHIP-OS Agent in the application list"
   },
   "settings.notifications.modal.winStep4": {
     "defaultMessage": "Bildirimleri açın ve ayarları istediğiniz gibi yapın"
@@ -4047,19 +4026,19 @@
     "defaultMessage": "Bildirimler"
   },
   "settings.preventSleep.description": {
-    "defaultMessage": "goose bir görevi çalıştırırken bilgisayarınızı uyanık tutun (ekran hala kilitlenebilir)"
+    "defaultMessage": "Keep your computer awake while SHIP-OS Agent is running a task (screen can still lock)"
   },
   "settings.preventSleep.title": {
     "defaultMessage": "Uykuyu Önleyin"
   },
   "settings.theme.description": {
-    "defaultMessage": "goose'nin görünümünü ve hissini özelleştirin"
+    "defaultMessage": "Customize the look and feel of SHIP-OS Agent"
   },
   "settings.theme.title": {
     "defaultMessage": "Tema"
   },
   "settings.updates.description": {
-    "defaultMessage": "goose'nin en iyi şekilde çalışmasını sağlamak için güncellemeleri kontrol edin ve yükleyin"
+    "defaultMessage": "Check for and install SHIP-OS Agent updates"
   },
   "settings.updates.title": {
     "defaultMessage": "Güncellemeler"
@@ -4070,26 +4049,14 @@
   "settingsView.tabApp": {
     "defaultMessage": "Uygulama"
   },
-  "settingsView.tabAuth": {
-    "defaultMessage": "Kimlik Doğrulama"
-  },
   "settingsView.tabChat": {
     "defaultMessage": "Sohbet"
-  },
-  "settingsView.tabExternalBackend": {
-    "defaultMessage": "Harici Arka Uç"
   },
   "settingsView.tabKeyboard": {
     "defaultMessage": "Klavye"
   },
-  "settingsView.tabLocalInference": {
-    "defaultMessage": "Yerel Çıkarım"
-  },
   "settingsView.tabModels": {
-    "defaultMessage": "Modeller"
-  },
-  "settingsView.tabPrompts": {
-    "defaultMessage": "İstemler"
+    "defaultMessage": "Providers"
   },
   "settingsView.title": {
     "defaultMessage": "Ayarlar"
