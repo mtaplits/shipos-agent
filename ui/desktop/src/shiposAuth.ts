@@ -14,7 +14,6 @@
 
 import { app, safeStorage } from 'electron';
 import fs from 'node:fs';
-import os from 'node:os';
 import path from 'node:path';
 
 const DESKTOP_UA =
@@ -70,8 +69,15 @@ export function defaultShiposBaseUrl(): string {
   return process.env.SHIPOS_API_BASE_URL ?? 'https://app.shipos.us';
 }
 
+export function shiposRuntimeRoot(): string {
+  // This is the sole root passed to Goose via GOOSE_PATH_ROOT. Goose derives
+  // config/, data/, state/, .agents/plugins and .agents/agents beneath it.
+  // Never fall back to Goose's normal user profile.
+  return path.join(app.getPath('userData'), 'runtime');
+}
+
 export function gooseConfigPath(): string {
-  return path.join(os.homedir(), '.config', 'goose', 'config.yaml');
+  return path.join(shiposRuntimeRoot(), 'config', 'config.yaml');
 }
 
 export function sessionFilePath(): string {
@@ -303,10 +309,12 @@ export function unregisterShiposMcpServer(): void {
 // ---------------------------------------------------------------------------
 
 let activeSession: DesktopLinkSession | null = null;
+let pendingBaseUrl: string | null = null;
 
 export async function shiposRequestLink(email: string, baseUrl?: string): Promise<void> {
   const resolvedBase = baseUrl ?? defaultShiposBaseUrl();
   pendingEmail = email.trim();
+  pendingBaseUrl = resolvedBase;
   activeSession = await requestDesktopLink(resolvedBase, email.trim());
 }
 
@@ -314,9 +322,10 @@ export async function shiposPoll(): Promise<ShiposSessionState> {
   if (!activeSession) {
     throw new ShiposAuthError('No sign-in link in progress. Request one first.', 'bad_response');
   }
-  const baseUrl = defaultShiposBaseUrl();
+  const baseUrl = pendingBaseUrl ?? defaultShiposBaseUrl();
   const sessionCookie = await pollDesktopSession(baseUrl, activeSession);
   activeSession = null;
+  pendingBaseUrl = null;
   const email = loadPendingEmail();
   if (!email) {
     throw new ShiposAuthError('Session email was lost before the link was confirmed.', 'storage');
@@ -345,6 +354,7 @@ function loadPendingEmail(): string | null {
 export function shiposSignOut(): ShiposSessionState {
   activeSession = null;
   pendingEmail = null;
+  pendingBaseUrl = null;
   try {
     if (fs.existsSync(sessionFilePath())) {
       fs.rmSync(sessionFilePath());

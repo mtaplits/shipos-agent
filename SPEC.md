@@ -187,3 +187,9 @@ This feature does NOT:
 3. Ask for a real order and confirm the agent invokes both SHIP-OS MCP tools.
 
 These require user credentials and production data and are intentionally not automated or stored in the repository.
+
+### Profile Isolation Correction (2026-08-08)
+
+SHIP-OS Agent is a completely separate program from Goose. The embedded Goose runtime is always launched with `GOOSE_PATH_ROOT` set to `<Electron userData>/runtime`, which isolates `config/`, `data/sessions/`, `state/`, `.agents/plugins/`, and `.agents/agents/`. `GOOSE_DISABLE_KEYRING=1` keeps BYOK provider secrets in the isolated profile rather than Goose's shared keyring service. External config merging is disabled. The SHIP-OS MCP entry is written only to the isolated runtime config.
+
+A first-run gate blocks Goose onboarding, provider setup, session history, and chat until a SHIP-OS desktop-link session has been established. Fresh-profile runtime verification confirmed the first screen is SHIP-OS login and the isolated session directory contains zero imported Goose conversations.

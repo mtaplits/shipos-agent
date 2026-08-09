@@ -4115,6 +4115,18 @@
   "shipos.emailPlaceholder": {
     "defaultMessage": "you@example.com"
   },
+  "shipos.firstRunDescription": {
+    "defaultMessage": "Connect your SHIP-OS account before configuring your AI provider or starting a conversation."
+  },
+  "shipos.firstRunEyebrow": {
+    "defaultMessage": "SHIP-OS Agent"
+  },
+  "shipos.firstRunPrivacy": {
+    "defaultMessage": "SHIP-OS Agent keeps its conversations, settings, provider keys, extensions, and sessions completely separate from Goose."
+  },
+  "shipos.firstRunTitle": {
+    "defaultMessage": "Sign in to SHIP-OS"
+  },
   "shipos.sendLink": {
     "defaultMessage": "Send sign-in link"
   },

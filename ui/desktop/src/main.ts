@@ -35,9 +35,10 @@ import {
   shiposRequestLink,
   shiposPoll,
   shiposSignOut,
+  shiposRuntimeRoot,
 } from './shiposAuth';
 import { acpWebSocketUrlFromHttpBase, normalizeAcpHttpBaseUrl } from './acp/url';
-import { expandTilde, sanitizeGoosePathRoot } from './utils/pathUtils';
+import { expandTilde } from './utils/pathUtils';
 import log from './utils/logger';
 import { ensureWinShims } from './utils/winShims';
 import { addRecentDir, loadRecentDirs } from './utils/recentDirs';
@@ -974,7 +975,9 @@ let appConfig = {
   GOOSE_DEFAULT_PROVIDER: defaultProvider,
   GOOSE_DEFAULT_MODEL: defaultModel,
   GOOSE_PREDEFINED_MODELS: predefinedModels,
-  GOOSE_PATH_ROOT: sanitizeGoosePathRoot(process.env),
+  // Hard isolation boundary: SHIP-OS Agent never reads the user's normal
+  // Goose config, sessions, extensions, agents, or state.
+  GOOSE_PATH_ROOT: shiposRuntimeRoot(),
   GOOSE_WORKING_DIR: '',
   // Start with the env-var override; the OS region locale is filled in after app.ready
   // (see updateLocaleFromSystem below) since getSystemLocale() cannot be called earlier.
@@ -1171,7 +1174,12 @@ const createChat = async (
         dir: workingDir,
         tls: true,
         env: {
-          GOOSE_PATH_ROOT: appConfig.GOOSE_PATH_ROOT as string | undefined,
+          GOOSE_PATH_ROOT: shiposRuntimeRoot(),
+          // Force secrets into the isolated profile's config/secrets.yaml.
+          // Goose's compiled keyring service name is shared otherwise.
+          GOOSE_DISABLE_KEYRING: '1',
+          // Never merge external Goose configuration into SHIP-OS Agent.
+          GOOSE_ADDITIONAL_CONFIG_FILES: '',
         },
         loginShellPath,
         isPackaged: app.isPackaged,

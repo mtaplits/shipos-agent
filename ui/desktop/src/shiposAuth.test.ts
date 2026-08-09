@@ -3,8 +3,19 @@ import {
   parseDesktopLinkHtml,
   renderMcpServerYaml,
   mergeMcpServerIntoConfig,
+  shiposRuntimeRoot,
+  gooseConfigPath,
   type McpServerEntry,
 } from './shiposAuth';
+
+describe('profile isolation', () => {
+  it('places Goose runtime state beneath SHIP-OS Agent userData', () => {
+    expect(shiposRuntimeRoot()).toBe('/tmp/test-user-data/runtime');
+    expect(gooseConfigPath()).toBe(`${shiposRuntimeRoot()}/config/config.yaml`);
+    expect(gooseConfigPath()).not.toContain('.config/goose');
+    expect(gooseConfigPath()).not.toContain('Application Support/Block/goose');
+  });
+});
 
 const entry: McpServerEntry = {
   command: 'node',

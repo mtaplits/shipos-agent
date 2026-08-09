@@ -32,7 +32,8 @@ interface PairRouteState {
 import SettingsView, { SettingsViewOptions } from './components/settings/SettingsView';
 import SessionsView from './components/sessions/SessionsView';
 import SchedulesView from './components/schedule/SchedulesView';
-import ShiposView from './components/shipos/ShiposView';import ProviderSettings from './components/settings/providers/ProviderSettingsPage';
+import ShiposView from './components/shipos/ShiposView';
+import ShiposFirstRunGate from './components/shipos/ShiposFirstRunGate';import ProviderSettings from './components/settings/providers/ProviderSettingsPage';
 import { AppLayout } from './components/Layout/AppLayout';
 import { ChatProvider, DEFAULT_CHAT_TITLE } from './contexts/ChatContext';
 import LauncherView from './components/LauncherView';
@@ -683,10 +684,12 @@ export default function App() {
       <FeaturesProvider>
         <ModelAndProviderProvider>
           <HashRouter>
-            <AppInner />
+            <ShiposFirstRunGate>
+              <AppInner />
+              <AnnouncementModal />
+              <TelemetryConsentPrompt />
+            </ShiposFirstRunGate>
           </HashRouter>
-          <AnnouncementModal />
-          <TelemetryConsentPrompt />
         </ModelAndProviderProvider>
       </FeaturesProvider>
     </ThemeProvider>

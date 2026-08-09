@@ -4654,5 +4654,17 @@
   },
   "shipos.waiting": {
     "defaultMessage": "Waiting for you to click the link…"
+  },
+  "shipos.firstRunDescription": {
+    "defaultMessage": "Connect your SHIP-OS account before configuring your AI provider or starting a conversation."
+  },
+  "shipos.firstRunEyebrow": {
+    "defaultMessage": "SHIP-OS Agent"
+  },
+  "shipos.firstRunPrivacy": {
+    "defaultMessage": "SHIP-OS Agent keeps its conversations, settings, provider keys, extensions, and sessions completely separate from Goose."
+  },
+  "shipos.firstRunTitle": {
+    "defaultMessage": "Sign in to SHIP-OS"
   }
 }
